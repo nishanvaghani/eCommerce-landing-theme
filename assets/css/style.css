@@ -1,0 +1,549 @@
+* {
+  font-family: "Outfit", sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+html {
+  font-size: 16px;
+  font-family: 'Muli', sans-serif;
+}
+img {
+  width: 100%;
+  object-fit: cover;
+}
+.container_xxxl {
+  margin: 0 auto;
+  max-width: 1650px;
+  padding: 0 15px;
+  width: 100%;
+}
+:root {
+  --sky_color: rgb(247 247 246);
+  --yellow_color: rgb(250 182 41);
+  --orange_color: #fa532c;
+}
+.bg_sky {
+  background-color: var(--sky_color);
+}
+.bg_yellow {
+  background-color: var(--yellow_color);
+}
+.text_yellow{
+    color: var(--yellow_color);
+}
+.text_light_black{
+   color: #555;
+}
+.small_text {
+  font-size: 0.8rem;
+}
+
+p{
+    font-size: 0.9rem;
+}
+/* ----------------top-header-------------- */
+.top_header select{
+  outline: 0 ;
+}
+/* --------header_middle-------- */
+.logo_img {
+  width: 171px;
+}
+.product_category:focus-visible {
+  outline: 0;
+}
+.header_middle_last_part .btn .badge {
+  right: -18px;
+}
+.product_icon1:hover, .product_icon2:hover, .product_icon3:hover{
+  color: #555;
+}
+/* ----------navbar---------- */
+ .dropdown-menu > li{
+  position: relative;
+}
+ .dropdown-menu1 {
+  display: none;
+  position: absolute;
+  left: 100%;
+  top: 0;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 0.25rem;
+  background-color: #fff !important;
+}
+ .header_middle_end .dropdown:hover .dropdown-menu, .navbar .dropdown:hover .dropdown-menu{
+  display: block;
+}
+ .dropdown-menu li:nth-child(2):hover .dropdown-menu1 {
+  display: block;
+}
+ .dropdown-item:hover {  
+  color: var(--yellow_color) !important;
+  background-color: #fff;
+}
+.header_middle_end.dropdown-item:focus{
+    background-color: transparent;
+}
+.dropdown-item:focus, .dropdown-item:hover {
+  background-color: var(--sky_color);
+}
+
+.fa-chevron-right {
+  transition: all 0.5s;
+}
+ .dropdown-item:hover .fa-chevron-right {
+  transform: translate(-5px);
+  transition: all 0.5s;
+}
+ .navbar_first .dropdown > a {
+  background-color: var(--yellow_color);
+}
+.recently_view_btn_body {
+  vertical-align: middle;
+}
+.navbar{
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+.recently_view_btn_body .dropdown-menu {
+  position: absolute;
+  right: 8% !important;
+  width: 84%;
+  /* left: auto; */
+}
+
+
+
+
+/* --------side_panel--------- */
+.side_panel .dropdown-item:hover{
+    color: var(--yellow_color);
+}
+
+/* ------------sidenav_right---------------- */
+
+
+.sidenav {
+    width: 0;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    transition: 0.5s;
+    z-index: 1000;
+  }
+  .sidenav a, .sidenav_right a {
+    display: block;
+    transition: 0.3s;
+  }
+  .sidenav_right{
+    width: 0;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    overflow-x: hidden;
+    transition: 0.5s;
+    z-index: 100;
+  }
+  .sidenav_right .form-control:focus {
+    box-shadow:none
+  }
+/* -----------hero_sec------------- */
+
+.hero_main_bg{
+  content: "";
+  background-image: url(../../img/hero_slider-bg.jpg);
+  width: 100%;
+}
+.hero_main_wrapper{
+  padding: 70px 0 ;
+}
+.hero_end{
+  height: 27vw;
+  max-height: 454px;
+}
+.hero_slider_part .owl-nav {
+  position: absolute;
+  right: 8px;
+  bottom: 6px;
+}
+.hero_btn1_body button{
+      position: absolute;
+    left: 15%;
+    bottom: 16%; 
+}
+.hero_btn2_body button{
+  position: absolute;
+  left: 10%;
+bottom: 16%; 
+}
+/* -------------------------category_sec-------------------- */
+.categories_body a{
+  color: black  ;
+}
+.categories_body a:hover{
+  color:var(--yellow_color);
+}
+.categories_body{
+  transition:all .5s;
+  height: 261px;
+}
+.categories_body:hover{
+  box-shadow: 0 1.5rem 2rem 0 hsl(225deg 2% 52% / 15%);
+  transition: .5s;
+  background-color: #fff;
+}
+.owl-carousel .owl-nav.disabled {
+  display: block;
+  right: 13px;
+}
+.owl-dots{
+  display: none;
+}
+  /* -----------------Featured_Brands_sec------------------- */
+.featured_brand_body:hover .featured_brand_content{
+   color: var(--yellow_color);
+   transition: all 0.5s;
+}
+/* ------------top_saver_product------------------------ */
+/* All sizes are based on EMs, so just change the font-size below and everything else will scale with it. */
+.countdown_part{
+  background-color: var(--orange_color);
+}
+.cart-box {
+	user-select: none;
+}
+
+ .card_footer{
+  display: none;
+  background-color: #fff;
+  border: 1px solid rgba(0,0,0,.125);
+}
+.item:hover .card_footer{
+    display: block;
+    border-top: none;
+}
+ .item:hover .card{
+  border-bottom: none;
+}
+ .product_icon{
+  visibility: hidden;
+}
+ .product_icon > div{
+  top: 10px;
+  right: 0px;
+}
+.card:hover .product_icon div a{
+transform: translateX(-13px);
+transition:  all 0.5s;
+transition-delay: 0s;
+}
+.card:hover .product_icon{
+  visibility: visible;
+}
+.card:hover .product_icon div .product_icon2{
+  transition-delay: 0.1s;
+}
+.card:hover .product_icon div .product_icon3{
+  transition-delay: 0.2s;
+}
+ .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev{
+  font-size: 25px;
+  margin: 3px ;
+  padding:0 10px !important;
+  background-color: var(--sky_color);
+  color: #6c757d;
+  border: 0.5px solid #e0dddd;
+}
+ .top_saver .owl-nav, 
+ .category_sec .owl-nav,
+ .featured_brand_sec .owl-nav,
+ .featured_products_sec .owl-nav,
+ .essential_products_sec .owl-nav,
+ .cabbage_sec .owl-nav{
+  position: absolute;
+    top: -53px;
+    right: 0px;
+  }
+  .top_saver .container_xxxl_height{
+    height: 532px;
+  }
+  .container_xxxl_height{
+    height: 600px;
+  }
+  /* ---------------------Just_landing_sec------------------- */
+.Just_landing_sec .owl-nav,  .category_sec .owl-nav, .featured_brand_sec .owl-nav{
+  position: absolute;
+    top: -53px;
+    right: 0px;
+  }
+  .Just_landing_sec_height{
+    height: 600px;
+  }
+  .Just_landing_sec_inner_2nd_part  div{
+
+  }
+  /* --------------health_sec-------------------- */
+  .health_sec_content{
+    background-color: #fff;
+    border: 1px solid #e0dddd;
+    border-radius: 10px ;
+  }
+  .health_sec_content a, .health_sec_content b {
+     color: rgb(44, 44, 44);
+  }
+  .health_sec_content a:hover{
+    color: var(--yellow_color);
+    transition:  0.5s;
+  }
+  .mobile_body {
+    content: "";
+    background-image: url('../../img/mobile.png');
+  width: 100%;
+height: 100%;
+left: 0;
+background-size: cover;
+background-position: bottom;
+background-color: #e4eaee;
+border-radius: 10px;
+}
+/* ---------------footer_middle------------------- */
+.footer_middle   a, .footer_product  a{
+  color: #555;
+}  
+.footer_middle a:hover, .footer_product  a:hover{
+  color: var(--yellow_color);
+  transition:  0.5s;
+}
+
+.email_box{
+  border: 1px solid grey;
+}
+.email_box input:focus{
+  outline: 0;
+}
+
+/* ---------------footer_bottom----- */
+
+.footer_icon a{
+    color: #fff;
+    padding: 3px 10px;
+}
+.footer_icon a:hover{
+  color: #555;
+  transition:  0.5s;
+}
+
+/* ---------mobile_view_footer---------------------- */
+.mobile_view_footer{
+  display: none;
+}
+/* --------------back_to_top_btn------------ */
+.back_to_top_btn{
+  z-index: 99999999;
+}
+/* -----------------modal----------- */
+
+.modal{
+  z-index: 99999999999;
+}
+.modal a{
+  color: #555;
+  text-decoration: none;
+}
+.Availability div{
+  border: 1px solid green;
+  background-color:#dff3df8f;
+  width: fit-content;
+}
+
+.form-check-input:checked~span {
+  outline: 2px solid var(--yellow_color);
+  outline-offset: 1px;
+}
+.color_main  span {
+  width: 25px ;
+  height: 25px;
+  display: block;
+}
+.size_main  span {
+  min-width: 25px ;
+  height: 25px;
+  display: block;
+  width: fit-content;
+}
+.modal_icon{
+  font-size: 10px;
+}
+.modal_icon .modal_icon1{
+  background-color: #4267b2;
+}
+.modal_icon .modal_icon2{
+  background-color: #3eb0ff;
+}
+.modal_icon .modal_icon3{
+  background-color: #b10c0c;
+}
+.modal_icon .modal_icon4{
+  background-color:#0271ae;
+}
+
+
+/* --------------modal slider--------- */
+
+
+
+.gallery {
+  margin: 2rem auto 5rem;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 80px); /*#*/
+  grid-template-rows: 80px 360px;
+  gap: 8px;
+  justify-content: center;
+  align-content: end;
+}
+
+.gallery div {
+  position: relative;
+  grid-column: span 4; /*#*/
+}
+.img-thumb {
+  padding: 0.25rem;
+  max-width: 100%;
+  height: auto;
+  background-color: LightSalmon;
+  border-radius: 0.25rem;
+}
+.gallery img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  -webkit-animation: animatezoom 600ms;
+  animation: animatezoom 600ms;
+}
+@keyframes animatezoom {
+  from {
+    transform: scale(0.2);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes animatezoom {
+  from {
+    -webkit-transform: scale(0.2);
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
+}
+
+.transluz {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  -webkit-backface-visibility: hidden;
+}
+.solid {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+.modal-header .btn-close:focus{
+  box-shadow: none;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width:1200px) {
+  .header_middle {
+      position: sticky;
+      top: 0;
+      z-index: 999999999;
+      background-color: #fff;
+  }
+  }
+  @media screen and  (min-width:1200px) {
+      #Just_landing_sec  .owl-nav {
+          display: none !important;
+      }
+  }
+  @media screen and (max-width:1024px)  {
+      .mobile_view_footer{
+         display: block;
+      }
+ }
+  @media screen and (max-width:991px) {
+      .health_daily_sec  .owl-nav{
+          display: flex !important;
+          justify-content: center; 
+          margin-top:16px;    
+      }
+      .mobile_body{
+       background-image: none;
+       margin-top: 25px;    
+      }
+      .card{
+          border-bottom: none;
+      }
+      .card_footer{
+          border-top: none;
+          display: block;
+      }    
+  }
+@media screen and (max-width:767px) {
+  .title_wrapper{
+      width: 200px;
+    }
+  .hero_end {
+      height: 38vw;
+  }
+  .hero_main_wrapper{
+      padding: 17px 0 ;
+    }
+    .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev{
+      font-size: 18px;
+    }
+    .card-body{
+      padding: 0;;
+    }
+  
+}
+
+@media screen and  (min-width:768px){
+  .health_daily_sec  .owl-carousel .owl-nav.disabled{
+      display: none;        
+  }
+  .gallery {
+      max-width: 720px;
+    }
+  
+}
+@media screen and (max-width:800px)  and (min-width:600px){
+  .Just_landing_sec_inner_2nd_part > div {      
+      margin-top: 90px;    
+}
+}
+@media screen and (max-width:576px) {
+  
+  .modal-dialog{
+      margin-left: 0;
+      margin-right: 0;
+  }
+}
+
+/* --------modal slider----------------- */
+@media (min-width: 576px) {
+  .gallery {
+    max-width: 540px;
+  }
+}
+@media (min-width: 992px) {
+  .gallery {
+    max-width: 960px;
+  }
+}

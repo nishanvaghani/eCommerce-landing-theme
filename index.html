@@ -1,0 +1,2975 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:site_name" content="Food - eCommerce">
+    <meta property="og:title" content="Food - eCommerce - landing page">
+    <meta property="og:description" content="">
+    <meta property="og:url" content="https://google.com">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="img/logo.png">
+    <meta name="twitter:title" content="Food - eCommerce - landing page">
+    <meta name="twitter:description" content="">
+
+    <!-- -----------BOOTSTRAP------------ -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- ------------FONTAWESOME--------------------- -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,100;1,200;1,400&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- -------------animation link--------------------- -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- -------------mediaQuery-- -->
+    <link rel="stylesheet" href="assets/css/mediaQuery.css">
+    <title>Food - eCommerce</title>
+    <link rel="shortcut icon" href="img/logo.png">
+</head>
+
+<body>
+    <div class="wrapper ">
+
+        <!-- -------------BACK TO TOP BTN------------- -->
+        <button class="back_to_top_btn btn btn-sm btn-dark position-fixed bottom-0 end-0 translate-middle d-none"
+            onclick="scrollToTop()" id="back-to-up">
+            <i class="fa-solid fa-chevron-up" aria-hidden="true"></i>
+        </button>
+        <!-- --------------------top_header-------------------- -->
+        <section class="top_header bg_sky border-bottom small_text">
+            <div class="container_xxxl">
+                <div class="row d-lg-flex d-none">
+                    <div
+                        class="col-lg-12 col-md-12 top_header d-flex justify-content-between align-items-center text-dark my-2">
+                        <div class=" top_first_part ">
+                            <a href="#" class="text-decoration-none px-2 py-1 text-dark border-end">About Us</a>
+                            <a href="#" class="text-decoration-none px-2 py-1 text-dark border-end">Wishlist</a>
+                            <a href="#" class="text-decoration-none px-2 py-1 text-dark ">Order Tracking</a>
+                        </div>
+                        <div class="d-flex align-items-center ">
+                            <a class="px-2 py-1 border-end">
+                                <select class="border-0 bg-transparent outline-0" aria-label="Default select example ">
+                                    <option selected>English</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </a>
+                            <a class="px-2 py-1 border-end">
+                                <select class="border-0 bg-transparent outline-0" aria-label="Default select example">
+                                    <option selected>USD</option>
+                                    <option value="1">VND1</option>
+                                    <option value="2">VND2</option>
+                                    <option value="3">VND3</option>
+                                </select>
+                            </a>
+                            <a href="#" class="text-decoration-none p-2 text-dark">Login/Register</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- -------header_middle----------------- -->
+        <section class="header_middle py-xl-5 py-3 border-bottom  ">
+            <div class="container_xxxl ">
+                <div class="row justify-content-between d-lg-flex align-items-center">
+                    <div class="d-xl-none col-lg-1 col-md-1 col-sm-1 col-1">
+                        <span style="font-size:30px;cursor:pointer" onclick="openNav()">
+                            <a href="#" class="text-decoration-none text-dark"><i class="fa-solid fa-bars fs-3"></i></a>
+                        </span>
+                    </div>
+                    <div
+                        class="col-xl-2  col-lg-10 col-md-10 col-sm-10 col-10 header_middle_start d-flex justify-content-center">
+                        <div class="logo_img">
+                            <img src="img/logo.png" alt="logo_img">
+                        </div>
+                    </div>
+                    <div class="d-xl-none  col-lg-1 col-md-1 col-sm-1 col-1">
+                        <span class="fs-5" onclick="openSearch()">
+
+                            <a href="#">
+                                <i class="fa-solid fa-magnifying-glass fs-3 float-end text-dark"></i>
+                            </a>
+                        </span>
+                    </div>
+
+
+                    <div
+                        class=" col-xl-5  d-xl-block d-lg-none d-md-none d-sm-none justify-content-lg-center d-none bg_sky">
+                        <div class="input-group  d-flex align-items-baseline  px-2 py-1">
+                            <div class="border-end ">
+                                <select class="bg-transparent outline-0 product_category border-0 me-1" aria-label="">
+                                    <option selected>All Categories</option>
+                                    <option value="1" class="">Fruits
+                                    </option>
+                                    <option value="2">Vegetables</option>
+                                    <option value="3">VND3</option>
+                                </select>
+                            </div>
+                            <input type="text"
+                                class="form-control border-0 bg_sky ms-1 shadow-none bg-transparent small_text"
+                                placeholder="I'm shopping for...">
+                            <div>
+                                <a href="#" target="_blank" class=""><i
+                                        class="fa-solid fa-magnifying-glass text-secondary fs-6 "></i></a>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-xl-4 co-lg-4 header_middle_last_part d-xl-block  d-lg-none d-sm-none d-none ">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="callNumber_content ">
+                                <h5 class="mb-0 fs-6">8 800 2545 55</h5>
+                                <span class="float-end text-secondary small_text">Support 24/7</span>
+                            </div>
+                            <div>
+                                <div class="d-flex">
+                                    <button type="button" class="btn  position-relative shadow-none">
+                                        <i class="fa-solid fa-repeat fs-5"></i>
+                                        <span class="position-absolute mt-1 translate-middle badge text-dark bg_yellow">
+                                            0
+                                            <span class="visually-hidden">unread messages</span>
+                                        </span>
+                                    </button>
+                                    <button type="button" class="btn position-relative shadow-none">
+                                        <i class="fa-solid fa-heart fs-5"></i>
+                                        <span class="position-absolute mt-1 translate-middle badge text-dark bg_yellow">
+                                            0
+                                            <span class="visually-hidden">unread messages</span>
+                                        </span>
+                                    </button>
+
+
+                                    <button type="button" class="btn position-relative shadow-none">
+
+                                        <div class="">
+                                            <i class="fa-solid fa-cart-shopping fs-5"></i>
+                                            <span
+                                                class="position-absolute mt-1 translate-middle badge text-dark bg_yellow">
+                                                0
+                                                <span class="visually-hidden">unread messages</span>
+                                            </span>
+                                        </div>
+
+                                    </button>
+                                    <div class="header_middle_end">
+                                        <div class="dropdown ps-3 "><a href="#"
+                                                class="dropdown-item text-decoration-none text-dark">
+                                                <p class="cart mb-0 small_text  text-secondary">Your Cart</p>
+                                                <p class="price mb-0  fw-bold text-dark">$0.00</p>
+                                            </a>
+                                            <ul class="dropdown-menu list-unstyled " data-bs-toggle="dropdown">
+                                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                            </ul>
+
+                                        </div>
+                                        <div></div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ---------left_side_panel--------------- -->
+            <div id="mySidenav" class="sidenav h-100 position-fixed bg_sky">
+
+                <div class="w-100 p-3 ">
+                    <div class="side_panel_header  d-flex justify-content-between align-items-center bg_yellow p-3 ">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"> <i
+                                class="fa-solid fa-arrow-left fs-5 text-dark"></i></a>
+                        <div class="fs-5 fw-bold">Menu</div>
+                    </div>
+
+
+                    <ul class="list-unstyled d-block mb-0 sidenav_ul">
+                        <li class="p-2  border-bottom"><a class="dropdown-item text-decoration-none text-dark"
+                                href="#"><i class="fa-solid fa-bolt px-1"></i>SpeciaL Price </a></li>
+                        <li class="dropdown p-2  border-bottom ">
+                            <a href="#" class="dropdown-item text-decoration-none text-dark"
+                                data-bs-toggle="dropdown">Pages
+                                <i class="fa-solid fa-angle-down px-1 float-end text-secondary"></i>
+                            </a>
+                            <ul class="dropdown-menu ">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown p-2  border-bottom">
+                            <a href="#" class="dropdown-item text-decoration-none text-dark"
+                                data-bs-toggle="dropdown">Shop
+                                <i class="fa-solid fa-angle-down px-1 float-end text-secondary"></i>
+                            </a>
+                            <ul class="dropdown-menu ">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="p-2  border-bottom"><a href="#"
+                                class="dropdown-item text-decoration-none text-dark">Stores</a></li>
+                        <li class="p-2  border-bottom"><a href="#"
+                                class="dropdown-item text-decoration-none text-dark">Blog</a></li>
+                        <li class="p-2  border-bottom"><a href="#"
+                                class="dropdown-item text-decoration-none text-dark">FAQs</a></li>
+                        <li class="p-2  border-bottom"><a href="#"
+                                class="dropdown-item text-decoration-none text-dark">Contact</a></li>
+                        <li class="p-2  border-bottom"><a href="#"
+                                class="dropdown-item text-decoration-none text-dark">AboutUs</a></li>
+                        <li class="p-2  border-bottom"><a href="#"
+                                class="dropdown-item text-decoration-none text-dark">Wishlist</a></li>
+                        <li class="p-2  border-bottom"><a href="#"
+                                class="dropdown-item text-decoration-none text-dark">Order Tracking</a></li>
+
+
+
+
+
+                    </ul>
+
+
+                </div>
+
+            </div>
+
+            <!-- -----------sidenav_right----------->
+
+            <div id="searchPanelRight" class="sidenav_right h-100 position-fixed bg_sky">
+
+                <div class="w-100 p-3 ">
+
+
+
+                    <div class="side_panel_header  d-flex justify-content-between align-items-center bg_yellow p-3 ">
+                        <div class="input-group  d-flex align-items-center">
+                            <input type="text" class="form-control border-0 rounded-0 small_text"
+                                placeholder="Search Something.." aria-label="Recipient's username"
+                                aria-describedby="basic-addon2">
+                            <a class="bg-light p-1 text-dark" id="basic-addon2"><i
+                                    class="fa-solid fa-magnifying-glass"></i></a>
+                        </div>
+                        <a href="javascript:void(0)" class="closebtn  border-0  bg-transparent" onclick="closeSearch()">
+                            <i class="fa-solid fa-xmark fs-5 text-dark ps-2 text-dark"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ----------navbar----------  -->
+        <section class="navbar bg-light">
+            <nav class="container_xxxl w-100 ">
+                <div class="row d-xl-flex  d-none w-100">
+
+                    <div class="col-xl-2  navbar_first my-auto ">
+                        <div class="dropdown dropdown-navbar rounded-3">
+                            <a class="text-decoration-none text-dark py-2 px-1 d-flex justify-content-center align-items-baseline"
+                                href="#">
+                                <i class="fa-solid fa-bars px-2 "></i>
+                                SHOP BY CATEGORY
+                            </a>
+                            <ul class="dropdown-menu  dropdown_menu_navbar">
+                                <li><a class="dropdown-item" href="#">fruits</a></li>
+                                <li><a class="dropdown-item" href="#">vegetables
+                                        <i class="fa-solid fa-chevron-right "></i></a>
+                                    <ul class="dropdown-menu1 list-unstyled bg-light">
+                                        <li><a class="dropdown-item " href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+
+                                </li>
+                                <li><a class="dropdown-item" href="#">Tea & Coffe</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-10 ">
+                        <div class="navbar_center d-flex justify-content-lg-between align-items-lg-baseline">
+                            <ul class="list-unstyled d-flex mb-0">
+                                <li class="p-2"><a class="dropdown-item text-decoration-none text-dark" href="#"><i
+                                            class="fa-solid fa-bolt px-1"></i>SpeciaL Price </a></li>
+                                <li class="dropdown p-2"><a href="#"
+                                        class="dropdown-item text-decoration-none text-dark ">Pages<i
+                                            class="fa-solid fa-angle-down px-1"></i></a>
+                                    <ul class="dropdown-menu ">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown p-2"><a href="#"
+                                        class="dropdown-item text-decoration-none text-dark">Shop<i
+                                            class="fa-solid fa-angle-down px-1"></i></a>
+                                    <ul class="dropdown-menu list-unstyled ">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </li>
+                                <li class="p-2"><a href="#"
+                                        class="dropdown-item text-decoration-none text-dark">Stores</a></li>
+                                <li class="p-2"><a href="#"
+                                        class="dropdown-item text-decoration-none text-dark">Blog</a></li>
+                                <li class="p-2"><a href="#"
+                                        class="dropdown-item text-decoration-none text-dark">FAQs</a></li>
+                                <li class="p-2"><a href="#"
+                                        class="dropdown-item text-decoration-none text-dark">Contact</a></li>
+                            </ul>
+                            <div
+                                class="d-inline-flex recently_view_btn_body text-decoration-none border-0 bg-transparent">
+                                <button type="button" class=" dropdown-item" data-bs-toggle="dropdown"
+                                    data-bs-display="static" aria-expanded="false"><i
+                                        class="fa-solid fa-arrows-rotate"></i>
+                                    Recently Viewed
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-lg-end ">
+                                    <p class="p-3 ">Recently Viewed Products is a function which helps you keep
+                                        track of your recent viewing history.<a class="dropdown-item text-primary"
+                                            href="#"> Shop Now</a></p>
+                                </ul>
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+            </nav>
+
+        </section>
+        <!-- -----------------hero_sec------------------ -->
+        <section class="hero_sec ">
+
+            <div class="hero_main_bg  d-flex align-items-center ">
+                <div class="container_xxxl  ">
+                    <div class="hero_main_wrapper ">
+                        <div class="row ">
+                            <div class="col-md-8 col-12 py-md-0 py-2" data-aos="fade-down" data-aos-duration="2000"
+                                data-aos-easing="ease-out-cubic">
+                                <div class="hero_slider_part">
+                                    <div class="owl-carousel owl-theme" id="hero_slider">
+                                        <div class="item">
+                                            <img src="img/01.jpg" alt="">
+                                            <div
+                                                class="hero_btn1_body d-none d-xxl-block d-xl-block d-lg-block d-md-block d-sm-block">
+                                                <button class="bg-light px-3 py-2 border-0">
+                                                    Shop Now
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <img class="" src="img/03.jpg" alt="">
+                                            <div
+                                                class="hero_btn1_body d-none d-xxl-block d-xl-block d-lg-block d-md-block d-sm-block">
+                                                <button class="bg-light px-3 py-2 border-0">
+                                                    Shop Now
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-12 py-md-0 py-2">
+                                <div class="hero_end position-relative" data-aos="fade-up" data-aos-duration="2000">
+
+
+                                    <img class="rounded-3 w-100 h-100 " src="img/1.jpg" alt="">
+                                    <div
+                                        class="hero_btn2_body d-none d-xxl-block d-xl-block d-lg-block d-md-block d-sm-block">
+                                        <button class="bg-light px-3 py-2 border-0">
+                                            Shop Now
+                                        </button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- -----------category_sec----------- -->
+        <section class="category_sec">
+            <div class="container_xxxl pt-3 ">
+                <div>
+                    <div class="row py-3">
+                        <div class="col-12  d-flex align-items-center flex-wrap">
+                            <div class="title_wrapper" data-aos="zoom-in" data-aos-easing="ease-out-cubic"
+                                data-aos-duration="2000">
+                                <h2 class="mb-0">Browse by Category</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ----box----- -->
+                    <div class="row">
+                        <div class="col-lg-12  px-0 g-0">
+                            <div class="owl-carousel owl-theme" id="category_sec">
+                                <div class="item " data-aos="fade-up" data-aos-duration="2000">
+                                    <div class="categories_body bg_sky rounded-3 px-0  g-0 mx-3 mt-3 mb-5">
+                                        <a href="#" class="text-decoration-none">
+                                            <div class=" p-2">
+                                                <div class="fruit_inner w-50 mx-auto pt-5">
+                                                    <img src="img/categories1.png" alt="">
+                                                </div>
+                                                <div class=" py-5 text-center">
+                                                    <h6 class="mb-0">Fruits & Vegetables</h6>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="item " data-aos="fade-up" data-aos-duration="2000">
+                                    <div class="categories_body bg_sky rounded-3 px-0  g-0 mx-3 mt-3 mb-5">
+                                        <div class=" p-2">
+                                            <div class="fruit_inner w-50 mx-auto pt-5">
+                                                <img src="img/categories8.png" alt="">
+                                            </div>
+                                            <div class=" py-5 text-center">
+                                                <h6 class="mb-0">Milks and Dairies</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item " data-aos="fade-up" data-aos-duration="2000">
+                                    <div class="categories_body bg_sky rounded-3 px-0  g-0 mx-3 mt-3 mb-5">
+                                        <div class=" p-2">
+                                            <div class="fruit_inner w-50 mx-auto pt-5">
+                                                <img class="animate__animated animate__bounce" src="img/categories2.png"
+                                                    alt="">
+                                            </div>
+                                            <div class=" py-5 text-center">
+                                                <h6 class="mb-0">Breads Sweets</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item " data-aos="fade-up" data-aos-duration="2000">
+                                    <div class="categories_body bg_sky rounded-3 px-0  g-0 mx-3 mt-3 mb-5">
+                                        <div class=" p-2">
+                                            <div class="fruit_inner w-50 mx-auto pt-5">
+                                                <img src="img/categories3.png" alt="">
+                                            </div>
+                                            <div class=" py-5 text-center">
+                                                <h6 class="mb-0">Frozen Seafoods</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item " data-aos="fade-up" data-aos-duration="2000">
+                                    <div class="categories_body bg_sky rounded-3 px-0  g-0 mx-3 mt-3 mb-5">
+                                        <div class=" p-2">
+                                            <div class="fruit_inner w-50 mx-auto pt-5">
+                                                <img src="img/categories4.png" alt="">
+                                            </div>
+                                            <div class=" py-5 text-center">
+                                                <h6 class="mb-0">Raw Meats</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item " data-aos="fade-up" data-aos-duration="2000">
+                                    <div class="categories_body bg_sky rounded-3 px-0  g-0 mx-3 mt-3 mb-5">
+                                        <div class=" p-2">
+                                            <div class="fruit_inner w-50 mx-auto pt-5">
+                                                <img src="img/categories5.png" alt="">
+                                            </div>
+                                            <div class=" py-5 text-center">
+                                                <h6 class="mb-0">Wines & Alcohol Drinkss</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item " data-aos="fade-up" data-aos-duration="2000">
+                                    <div class="categories_body bg_sky rounded-3 px-0  g-0 mx-3 mt-3 mb-5">
+                                        <div class=" p-2">
+                                            <div class="fruit_inner w-50 mx-auto pt-5">
+                                                <img src="img/categories2.png" alt="">
+                                            </div>
+                                            <div class=" py-5 text-center">
+                                                <h6 class="mb-0">Tea & Coffee</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item " data-aos="fade-up" data-aos-duration="2000">
+                                    <div class="categories_body bg_sky rounded-3 px-0  g-0 mx-3 mt-3 mb-5">
+                                        <div class=" p-2">
+                                            <div class="fruit_inner w-50 mx-auto pt-5">
+                                                <img src="img/categories7.png" alt="">
+                                            </div>
+                                            <div class=" py-5 text-center">
+                                                <h6 class="mb-0">Milks and Dairies</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- -----------------------Featured_Brands_sec--------------------------- -->
+        <section class="featured_brand_sec">
+            <div class="container_xxxl">
+                <div class="row py-3">
+                    <div class="col-12  d-flex align-items-center flex-wrap">
+                        <div class="title_wrapper" data-aos="zoom-in" data-aos-easing="ease-out-cubic"
+                            data-aos-duration="2000">
+                            <h2 class="mb-0">Featured Brands</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12  px-0 g-0">
+                        <div class="owl-carousel owl-theme" id="Featured_Brands_sec">
+                            <div class="item" data-aos="flip-right" data-aos-easing="ease-out-cubic"
+                                data-aos-duration="1000">
+                                <div class="featured_brand_body p-3">
+                                    <div class="featured_brand_img">
+                                        <img class="animate__animated animate__bounce" src="img/brand1.png" alt="">
+                                    </div>
+                                    <div class="py-2 py-xxl-4 py-xl-4 py-lg-3">
+                                        <h5 class="text-secondary ">FoodPound</h5>
+                                        <p class=" featured_brand_content">New Snacks Release</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+                                data-aos-duration="1000">
+                                <div class="featured_brand_body p-3">
+                                    <div class="featured_brand_img">
+                                        <img src="img/brand2.png" alt="">
+                                    </div>
+                                    <div class="py-2 py-xxl-4 py-xl-4 py-lg-3">
+                                        <h5 class="text-secondary ">iTea JSC</h5>
+                                        <p class=" featured_brand_content">Fresh Meat Sausage. BUY 2 GET 1!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item" data-aos="flip-right" data-aos-easing="ease-out-cubic"
+                                data-aos-duration="1000">
+                                <div class="featured_brand_body p-3">
+                                    <div class="featured_brand_img">
+                                        <img src="img/brand3.png" alt="">
+                                    </div>
+                                    <div class="py-2 py-xxl-4 py-xl-4 py-lg-3">
+                                        <h5 class="text-secondary "> Soda Brand</h5>
+                                        <p class=" featured_brand_content">New Snacks Release</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+                                data-aos-duration="1000">
+                                <div class="featured_brand_body p-3">
+                                    <div class="featured_brand_img">
+                                        <img src="img/brand4.png" alt="">
+                                    </div>
+                                    <div class="py-2 py-xxl-4 py-xl-4 py-lg-3">
+                                        <h5 class="text-secondary "> Farmart</h5>
+                                        <p class=" featured_brand_content">Fresh Meat Sausage. BUY 2 GET 1!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ------------top_saver-------------- -->
+        <section>
+            <div class="top_saver  ">
+                <div class="container_xxxl py-3 container_xxxl_height">
+                    <div class="row py-3">
+                        <div class="col-12 title_body d-flex align-items-center flex-wrap">
+                            <div class="title_wrapper" data-aos="zoom-in" data-aos-easing="ease-out-cubic"
+                                data-aos-duration="2000">
+                                <h2 class="mb-0">Top Saver Today</h2>
+                            </div>
+                            <div class="px-4 d-md-block  d-none">
+                                <a href="#" class="text-decoration-none text-dark ">All Offer
+                                    <i class="fa-solid fa-chevron-right small_text text-secondary ps-1"></i> </a>
+                            </div>
+                            <div class="countdown_part d-flex align-items-center mx-xxl-2 mx-xl-2 mx-lg-2 mx-md-2 mx-sm-2 mx-0 px-2  py-1  rounded-1 text-light"
+                                id="countdown">
+                                <i class="fa-solid fa-gauge-high pe-2"></i>
+                                <p class="mb-0">Expires in:</p>
+                                <ul class="d-flex align-items-center text-center ps-1 mb-0">
+                                    <li class="list-unstyled px-1" id="days"></li>:
+                                    <li class="list-unstyled px-1" id="hours"></li>:
+                                    <li class="list-unstyled px-1" id="minutes"></li>:
+                                    <li class="list-unstyled px-1" id="seconds"></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card -->
+                    <div class="row top_saver_inner g-0">
+                        <div class="col-lg-12  px-0 g-0">
+                            <div class="owl-carousel owl-theme" id="top_saver">
+                                <div class="item" data-aos="zoom-in" data-aos-duration="2000">
+                                    <div class="card  rounded-0 p-3  ">
+                                        <div class="card-img ">
+                                            <div class="rebbon  ">
+                                                <p
+                                                    class="position-absolute bg_yellow text-light p-1 rounded-1 small_text">
+                                                    -36%</p>
+                                            </div>
+                                            <a href="#">
+                                                <img src="img/product1.jpg" class="w-100" alt="">
+                                            </a>
+                                            <div class="product_icon">
+                                                <div class="position-absolute d-flex flex-column  ">
+                                                    <a data-bs-toggle="modal" href="#exampleModalToggle" role="button"
+                                                        class="text_yellow   product_icon1">
+                                                        <i class="fa-solid fa-maximize"></i>
+                                                    </a>
+                                                    <a href="#" class="text_yellow product_icon2">
+                                                        <i class="fa-regular fa-heart"></i>
+                                                    </a>
+                                                    <a href="#" class="text_yellow product_icon3">
+                                                        <i class="fa-solid fa-repeat"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body pb-0">
+                                            <div class="card-title">
+                                                <a href="#" class="text-dark text-decoration-none">
+                                                    <p class="mb-0">Robert Store</p>
+                                                </a>
+                                                <a href="#" class="text-decoration-none">
+                                                    <p>Red & Black Headphone</p>
+                                                </a>
+                                            </div>
+                                            <div class="card-text">
+                                                <div>
+                                                    <i class="fa-solid fa-star text_yellow small_text"></i>
+                                                    <i class="fa-solid fa-star text_yellow small_text"></i>
+                                                    <i class="fa-solid fa-star text_yellow small_text"></i>
+                                                    <i class="fa-solid fa-star text_yellow small_text"></i>
+                                                    <i class="fa-solid fa-star small_text"></i>
+                                                </div>
+                                                <div class="d-flex">
+                                                    <h6 class="text-danger">$350.05 <del
+                                                            class="small_text text-secondary">$506.00</del></h6>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="card_footer   px-1 pb-1 ">
+                                        <form class="wrapper text-align-center mx-auto">
+                                            <div class="cart-box d-inline-block p-1 w-100">
+                                                <div class="border d-flex justify-content-center rounded-1 py-1 mt-1 w-50 product_data"
+                                                    id="qty_select">
+                                                    <input type="hidden" value=" 1 " class="prod_id">
+                                                    <div class="input-group text-center justify-content-evenly align-items-center"
+                                                        id="qty_selector">
+                                                        <a class="decrement-btn text-dark ">
+                                                            <i class="fa fa-minus ps-0 small_text"></i>
+                                                        </a>
+                                                        <input type="text" readonly="readonly" id="qty_display"
+                                                            class="qty-input text-center w-25 border-0" value="1" />
+                                                        <a class="increment-btn">
+                                                            <i class="fa fa-plus text-dark  small_text"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <a class="mt-0 text-decoration-none text-dark d-flex py-1">
+
+                                                    <div
+                                                        class="d-flex align-items-center justify-content-center bg_yellow w-100">
+                                                        <i class="fa-solid fa-cart-shopping"></i>
+                                                        <input
+                                                            class="submit text-center position-relative border-0 bg_yellow py-2 rounded"
+                                                            type="submit" value="Add to Cart">
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="item" data-aos="zoom-in" data-aos-duration="2000">
+                                    <div class="card  rounded-0 p-3 ">
+                                        <div class="card-img ">
+                                            <div class="rebbon  ">
+                                                <p
+                                                    class="position-absolute bg_yellow text-light p-1 rounded-1 small_text">
+                                                    -36%</p>
+                                            </div>
+                                            <a href="#">
+                                                <img src="img/product3.jpg" class="w-100" alt="">
+                                            </a>
+                                            <div class="product_icon">
+                                                <div class="position-absolute d-flex flex-column  ">
+                                                    <a data-bs-toggle="modal" href="#exampleModalToggle" role="button"
+                                                        class="text_yellow   product_icon1">
+                                                        <i class="fa-solid fa-maximize"></i>
+                                                    </a>
+                                                    <a href="#" class="text_yellow product_icon2">
+                                                        <i class="fa-regular fa-heart"></i>
+                                                    </a>
+                                                    <a href="#" class="text_yellow product_icon3">
+                                                        <i class="fa-solid fa-repeat"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body pb-0">
+                                            <div class="card-title">
+                                                <a href="#" class="text-dark text-decoration-none">
+                                                    <p class="mb-0">Robert Store</p>
+                                                </a>
+                                                <a href="#" class="text-decoration-none">
+                                                    <p>Red & Black Headphone</p>
+                                                </a>
+                                            </div>
+                                            <div class="card-text">
+                                                <div>
+                                                    <i class="fa-solid fa-star text_yellow small_text"></i>
+                                                    <i class="fa-solid fa-star text_yellow small_text"></i>
+                                                    <i class="fa-solid fa-star text_yellow small_text"></i>
+                                                    <i class="fa-solid fa-star text_yellow small_text"></i>
+                                                    <i class="fa-solid fa-star small_text"></i>
+                                                </div>
+                                                <div class="d-flex">
+                                                    <h6 class="text-danger">$341.05 <del
+                                                            class="small_text text-secondary">$506.00</del></h6>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="card_footer   px-1 pb-1 ">
+                                        <form class="wrapper text-align-center mx-auto">
+                                            <div class="cart-box d-inline-block p-1 w-100">
+                                                <div class="border d-flex justify-content-center rounded-1 py-1 mt-1 w-50 product_data"
+                                                    id="qty_select">
+                                                    <input type="hidden" value=" 1 " class="prod_id">
+                                                    <div class="input-group text-center justify-content-evenly align-items-center"
+                                                        id="qty_selector">
+                                                        <a class="decrement-btn text-dark">
+                                                            <i class="fa fa-minus ps-0 small_text"></i>
+                                                        </a>
+                                                        <input type="text" readonly="readonly" id="qty_display"
+                                                            class="qty-input text-center w-25 border-0" value="1" />
+                                                        <a class="increment-btn">
+                                                            <i class="fa fa-plus text-dark  small_text"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <a class="mt-0 text-decoration-none text-dark d-flex py-1 ">
+
+                                                    <div
+                                                        class="d-flex align-items-center justify-content-center bg_yellow  w-100 ">
+                                                        <i class="fa-solid fa-cart-shopping"></i>
+                                                        <input
+                                                            class="submit text-center position-relative border-0 bg_yellow py-2 rounded"
+                                                            type="submit" value="Add to Cart">
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="item" data-aos="zoom-in" data-aos-duration="2000">
+                                    <div class="card  rounded-0 p-3 ">
+                                        <div class="card-img ">
+                                            <div class="rebbon  ">
+                                                <p
+                                                    class="position-absolute bg_yellow text-light p-1 rounded-1 small_text">
+                                                    -36%</p>
+                                            </div>
+                                            <a href="#">
+                                                <img src="img/product2.jpg" class="w-100" alt="">
+                                            </a>
+                                            <div class="product_icon">
+                                                <div class="position-absolute d-flex flex-column  ">
+                                                    <a data-bs-toggle="modal" href="#exampleModalToggle" role="button"
+                                                        class="text_yellow   product_icon1">
+                                                        <i class="fa-solid fa-maximize"></i>
+                                                    </a>
+                                                    <a href="#" class="text_yellow product_icon2">
+                                                        <i class="fa-regular fa-heart"></i>
+                                                    </a>
+                                                    <a href="#" class="text_yellow product_icon3">
+                                                        <i class="fa-solid fa-repeat"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body pb-0">
+                                            <div class="card-title">
+                                                <a href="#" class="text-dark text-decoration-none">
+                                                    <p class="mb-0">Robert Store</p>
+                                                </a>
+                                                <a href="#" class="text-decoration-none">
+                                                    <p>Red & Black Headphone</p>
+                                                </a>
+                                            </div>
+                                            <div class="card-text">
+                                                <div>
+                                                    <i class="fa-solid fa-star text_yellow small_text"></i>
+                                                    <i class="fa-solid fa-star text_yellow small_text"></i>
+                                                    <i class="fa-solid fa-star text_yellow small_text"></i>
+                                                    <i class="fa-solid fa-star text_yellow small_text"></i>
+                                                    <i class="fa-solid fa-star small_text"></i>
+                                                </div>
+                                                <div class="d-flex">
+                                                    <h6 class="text-danger">$341.05 <del
+                                                            class="small_text text-secondary">$506.00</del></h6>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="card_footer   px-1 pb-1 ">
+                                        <form class="wrapper text-align-center mx-auto">
+                                            <div class="cart-box d-inline-block p-1 w-100">
+                                                <div class="border d-flex justify-content-center rounded-1 py-1 mt-1 w-50 product_data"
+                                                    id="qty_select">
+                                                    <input type="hidden" value=" 1 " class="prod_id">
+                                                    <div class="input-group text-center justify-content-evenly align-items-center"
+                                                        id="qty_selector">
+                                                        <a class="decrement-btn text-dark">
+                                                            <i class="fa fa-minus ps-0 small_text"></i>
+                                                        </a>
+                                                        <input type="text" readonly="readonly" id="qty_display"
+                                                            class="qty-input text-center w-25 border-0" value="1" />
+                                                        <a class="increment-btn">
+                                                            <i class="fa fa-plus text-dark  small_text"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <a class="mt-0 text-decoration-none text-dark d-flex py-1 ">
+
+                                                    <div
+                                                        class="d-flex align-items-center justify-content-center bg_yellow  w-100 ">
+                                                        <i class="fa-solid fa-cart-shopping"></i>
+                                                        <input
+                                                            class="submit text-center position-relative border-0 bg_yellow py-2 rounded"
+                                                            type="submit" value="Add to Cart">
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- -------------------Just_landing_sec----------------- -->
+
+        <section>
+            <div class="Just_landing_sec bg_sky pt-2 ">
+                <div class="container_xxxl py-3 container_xxxl_height">
+                    <div class="row py-3">
+                        <div class="col-12 title_body d-flex align-items-center flex-wrap">
+                            <div class="title_wrapper" data-aos="zoom-in" data-aos-easing="ease-out-cubic"
+                                data-aos-duration="2000">
+                                <h2 class="mb-0 pt-3">Just Landing</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card -->
+                    <div class="row Just_landing_sec_inner g-0">
+                        <div class="col-12   px-0 g-0">
+                            <div class="owl-carousel owl-theme" id="Just_landing_sec">
+                                <!-- <div> -->
+
+
+                                <div class="item" data-aos="zoom-in" data-aos-duration="2000">
+                                    <div class="card  rounded-0 p-3 ">
+                                        <div class="card-img ">
+                                            <div class="rebbon  ">
+                                                <p
+                                                    class="position-absolute bg_yellow text-light p-1 rounded-1 small_text">
+                                                    -36%</p>
+                                            </div>
+                                            <a href="#">
+                                                <img src="img/product1.jpg" class="w-100" alt="">
+                                            </a>
+                                            <div class="product_icon">
+                                                <div class="position-absolute d-flex flex-column  ">
+                                                    <a data-bs-toggle="modal" href="#exampleModalToggle" role="button"
+                                                        class="text_yellow   product_icon1">
+                                                        <i class="fa-solid fa-maximize"></i>
+                                                    </a>
+                                                    <a href="#" class="text_yellow product_icon2">
+                                                        <i class="fa-regular fa-heart"></i>
+                                                    </a>
+                                                    <a href="#" class="text_yellow product_icon3">
+                                                        <i class="fa-solid fa-repeat"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body pb-0">
+                                            <div class="card-title">
+                                                <a href="#" class="text-dark text-decoration-none">
+                                                    <p class="mb-0">Robert Store</p>
+                                                </a>
+                                                <a href="#" class="text-decoration-none">
+                                                    <p>Red & Black Headphone</p>
+                                                </a>
+                                            </div>
+                                            <div class="card-text">
+                                                <div>
+                                                    <i class="fa-solid fa-star text_yellow small_text"></i>
+                                                    <i class="fa-solid fa-star text_yellow small_text"></i>
+                                                    <i class="fa-solid fa-star text_yellow small_text"></i>
+                                                    <i class="fa-solid fa-star text_yellow small_text"></i>
+                                                    <i class="fa-solid fa-star small_text"></i>
+                                                </div>
+                                                <div class="d-flex">
+                                                    <h6 class="text-danger">$350.05 <del
+                                                            class="small_text text-secondary">$506.00</del></h6>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="card_footer   px-1 pb-1 ">
+                                        <form class="wrapper text-align-center mx-auto">
+                                            <div class="cart-box d-inline-block p-1 w-100">
+                                                <div class="border d-flex justify-content-center rounded-1 py-1 mt-1 w-50 product_data"
+                                                    id="qty_select">
+                                                    <input type="hidden" value=" 1 " class="prod_id">
+                                                    <div class="input-group text-center justify-content-evenly align-items-center"
+                                                        id="qty_selector">
+                                                        <a class="decrement-btn text-dark">
+                                                            <i class="fa fa-minus ps-0 small_text"></i>
+                                                        </a>
+                                                        <input type="text" readonly="readonly" id="qty_display"
+                                                            class="qty-input text-center w-25 border-0" value="1" />
+                                                        <a class="increment-btn">
+                                                            <i class="fa fa-plus text-dark  small_text"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <a class="mt-0 text-decoration-none text-dark d-flex py-1 ">
+
+                                                    <div
+                                                        class="d-flex align-items-center justify-content-center bg_yellow  w-100 ">
+                                                        <i class="fa-solid fa-cart-shopping"></i>
+                                                        <input
+                                                            class="submit text-center position-relative border-0 bg_yellow py-2 rounded"
+                                                            type="submit" value="Add to Cart">
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="item" data-aos="zoom-in" data-aos-duration="2000">
+                                    <div class="card  rounded-0 p-3 ">
+                                        <div class="card-img ">
+                                            <div class="rebbon  ">
+                                                <p
+                                                    class="position-absolute bg_yellow text-light p-1 rounded-1 small_text">
+                                                    -36%</p>
+                                            </div>
+                                            <a href="#">
+                                                <img src="img/product2.jpg" class="w-100" alt="">
+                                            </a>
+                                            <div class="product_icon">
+                                                <div class="position-absolute d-flex flex-column  ">
+                                                    <a data-bs-toggle="modal" href="#exampleModalToggle" role="button"
+                                                        class="text_yellow   product_icon1">
+                                                        <i class="fa-solid fa-maximize"></i>
+                                                    </a>
+                                                    <a href="#" class="text_yellow product_icon2">
+                                                        <i class="fa-regular fa-heart"></i>
+                                                    </a>
+                                                    <a href="#" class="text_yellow product_icon3">
+                                                        <i class="fa-solid fa-repeat"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body pb-0">
+                                            <div class="card-title">
+                                                <a href="#" class="text-dark text-decoration-none">
+                                                    <p class="mb-0">Robert Store</p>
+                                                </a>
+                                                <a href="#" class="text-decoration-none">
+                                                    <p>Red & Black Headphone</p>
+                                                </a>
+                                            </div>
+                                            <div class="card-text">
+                                                <div>
+                                                    <i class="fa-solid fa-star text_yellow small_text"></i>
+                                                    <i class="fa-solid fa-star text_yellow small_text"></i>
+                                                    <i class="fa-solid fa-star text_yellow small_text"></i>
+                                                    <i class="fa-solid fa-star text_yellow small_text"></i>
+                                                    <i class="fa-solid fa-star small_text"></i>
+                                                </div>
+                                                <div class="d-flex">
+                                                    <h6 class="text-danger">$350.05 <del
+                                                            class="small_text text-secondary">$506.00</del></h6>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="card_footer   px-1 pb-1 ">
+                                        <form class="wrapper text-align-center mx-auto">
+                                            <div class="cart-box d-inline-block p-1 w-100">
+                                                <div class="border d-flex justify-content-center rounded-1 py-1 mt-1 w-50 product_data"
+                                                    id="qty_select">
+                                                    <input type="hidden" value=" 1 " class="prod_id">
+                                                    <div class="input-group text-center justify-content-evenly align-items-center"
+                                                        id="qty_selector">
+                                                        <a class="decrement-btn text-dark">
+                                                            <i class="fa fa-minus ps-0 small_text"></i>
+                                                        </a>
+                                                        <input type="text" readonly="readonly" id="qty_display"
+                                                            class="qty-input text-center w-25 border-0" value="1" />
+                                                        <a class="increment-btn">
+                                                            <i class="fa fa-plus text-dark  small_text"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <a class="mt-0 text-decoration-none text-dark d-flex py-1 ">
+
+                                                    <div
+                                                        class="d-flex align-items-center justify-content-center bg_yellow  w-100 ">
+                                                        <i class="fa-solid fa-cart-shopping"></i>
+                                                        <input
+                                                            class="submit text-center position-relative border-0 bg_yellow py-2 rounded"
+                                                            type="submit" value="Add to Cart">
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <!-- </div> -->
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+        <!-- ----------------------Just_landing_sec_inner_2nd_part--------------------------- -->
+        <section>
+            <div class="Just_landing_sec_inner_2nd_part my-4 ">
+                <div class="container_xxxl   ">
+                    <div class="row py-xxl-5 py-xl-5 px-lg-4 px-md-3">
+                        <div class="col-lg-4 col-sm-6 col-12 py-3  " data-aos="flip-right" data-aos-duration="2000">
+                            <a href="#">
+                                <div>
+                                    <div class="bg_img">
+                                        <img src="img/11.png" alt="">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-sm-6 col-12 py-3  " data-aos="flip-up" data-aos-duration="2000">
+                            <a href="#">
+                                <div>
+                                    <div class="bg_img">
+                                        <img src="img/12.png" alt="">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-sm-6 col-12 py-3  mx-sm-auto " data-aos="flip-left"
+                            data-aos-duration="2000">
+                            <a href="#">
+                                <div>
+                                    <div class="bg_img">
+                                        <img src="img/13.png" alt="">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- -------------featured_products------------- -->
+        <section>
+            <div class="featured_products_sec bg_sky  mb-3">
+                <div class="container_xxxl py-3 container_xxxl_height">
+                    <div class="row py-3">
+                        <div class="col-12 title_body d-flex align-items-center flex-wrap">
+                            <div class="title_wrapper" data-aos="zoom-in" data-aos-easing="ease-out-cubic"
+                                data-aos-duration="2000">
+                                <h2 class="mb-0">Featured products</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card -->
+                    <div class="row featured_products_inner g-0">
+                        <div class="col-12   px-0 g-0">
+                            <div class="owl-carousel owl-theme" id="featured_products">
+                                <div class="item" data-aos="flip-right" data-aos-easing="ease-out-cubic"
+                                    data-aos-duration="2000">
+                                    <div class="card  rounded-0 p-3 ">
+                                        <div class="card-img ">
+                                            <div class="rebbon  ">
+                                                <p
+                                                    class="position-absolute bg_yellow text-light p-1 rounded-1 small_text">
+                                                    -36%</p>
+                                            </div>
+                                            <a href="#">
+                                                <img src="img/product1.jpg" class="w-100" alt="">
+                                            </a>
+                                            <div class="product_icon">
+                                                <div class="position-absolute d-flex flex-column  ">
+                                                    <a data-bs-toggle="modal" href="#exampleModalToggle" role="button"
+                                                        class="text_yellow   product_icon1">
+                                                        <i class="fa-solid fa-maximize"></i>
+                                                    </a>
+                                                    <a href="#" class="text_yellow product_icon2">
+                                                        <i class="fa-regular fa-heart"></i>
+                                                    </a>
+                                                    <a href="#" class="text_yellow product_icon3">
+                                                        <i class="fa-solid fa-repeat"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body pb-0">
+                                            <div class="card-title">
+                                                <a href="#" class="text-dark text-decoration-none">
+                                                    <p class="mb-0">Robert Store</p>
+                                                </a>
+                                                <a href="#" class="text-decoration-none">
+                                                    <p>Red & Black Headphone</p>
+                                                </a>
+                                            </div>
+                                            <div class="card-text">
+                                                <div>
+                                                    <i class="fa-solid fa-star text_yellow small_text"></i>
+                                                    <i class="fa-solid fa-star text_yellow small_text"></i>
+                                                    <i class="fa-solid fa-star text_yellow small_text"></i>
+                                                    <i class="fa-solid fa-star text_yellow small_text"></i>
+                                                    <i class="fa-solid fa-star small_text"></i>
+                                                </div>
+                                                <div class="d-flex">
+                                                    <h6 class="text-danger">$350.05 <del
+                                                            class="small_text text-secondary">$506.00</del></h6>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="card_footer   px-1 pb-1 ">
+                                        <form class="wrapper text-align-center mx-auto">
+                                            <div class="cart-box d-inline-block p-1 w-100">
+                                                <div class="border d-flex justify-content-center rounded-1 py-1 mt-1 w-50 product_data"
+                                                    id="qty_select">
+                                                    <input type="hidden" value=" 1 " class="prod_id">
+                                                    <div class="input-group text-center justify-content-evenly align-items-center"
+                                                        id="qty_selector">
+                                                        <a class="decrement-btn text-dark">
+                                                            <i class="fa fa-minus ps-0 small_text"></i>
+                                                        </a>
+                                                        <input type="text" readonly="readonly" id="qty_display"
+                                                            class="qty-input text-center w-25 border-0" value="1" />
+                                                        <a class="increment-btn">
+                                                            <i class="fa fa-plus text-dark  small_text"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <a class="mt-0 text-decoration-none text-dark d-flex py-1 ">
+
+                                                    <div
+                                                        class="d-flex align-items-center justify-content-center bg_yellow  w-100 ">
+                                                        <i class="fa-solid fa-cart-shopping"></i>
+                                                        <input
+                                                            class="submit text-center position-relative border-0 bg_yellow py-2 rounded"
+                                                            type="submit" value="Add to Cart">
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="item" data-aos="flip-right" data-aos-easing="ease-out-cubic"
+                                    data-aos-duration="2000">
+                                    <div class="card  rounded-0 p-3 ">
+                                        <div class="card-img ">
+                                            <div class="rebbon  ">
+                                                <p
+                                                    class="position-absolute bg_yellow text-light p-1 rounded-1 small_text">
+                                                    -36%</p>
+                                            </div>
+                                            <a href="#">
+                                                <img src="img/product2.jpg" class="w-100" alt="">
+                                            </a>
+                                            <div class="product_icon">
+                                                <div class="position-absolute d-flex flex-column  ">
+                                                    <a data-bs-toggle="modal" href="#exampleModalToggle" role="button"
+                                                        class="text_yellow   product_icon1">
+                                                        <i class="fa-solid fa-maximize"></i>
+                                                    </a>
+                                                    <a href="#" class="text_yellow product_icon2">
+                                                        <i class="fa-regular fa-heart"></i>
+                                                    </a>
+                                                    <a href="#" class="text_yellow product_icon3">
+                                                        <i class="fa-solid fa-repeat"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body pb-0">
+                                            <div class="card-title">
+                                                <a href="#" class="text-dark text-decoration-none">
+                                                    <p class="mb-0">Robert Store</p>
+                                                </a>
+                                                <a href="#" class="text-decoration-none">
+                                                    <p>Red & Black Headphone</p>
+                                                </a>
+                                            </div>
+                                            <div class="card-text">
+                                                <div>
+                                                    <i class="fa-solid fa-star text_yellow small_text"></i>
+                                                    <i class="fa-solid fa-star text_yellow small_text"></i>
+                                                    <i class="fa-solid fa-star text_yellow small_text"></i>
+                                                    <i class="fa-solid fa-star text_yellow small_text"></i>
+                                                    <i class="fa-solid fa-star small_text"></i>
+                                                </div>
+                                                <div class="d-flex">
+                                                    <h6 class="text-danger">$341.05 <del
+                                                            class="small_text text-secondary">$506.00</del></h6>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="card_footer   px-1 pb-1 ">
+                                        <form class="wrapper text-align-center mx-auto">
+                                            <div class="cart-box d-inline-block p-1 w-100">
+                                                <div class="border d-flex justify-content-center rounded-1 py-1 mt-1 w-50 product_data"
+                                                    id="qty_select">
+                                                    <input type="hidden" value=" 1 " class="prod_id">
+                                                    <div class="input-group text-center justify-content-evenly align-items-center"
+                                                        id="qty_selector">
+                                                        <a class="decrement-btn text-dark">
+                                                            <i class="fa fa-minus ps-0 small_text"></i>
+                                                        </a>
+                                                        <input type="text" readonly="readonly" id="qty_display"
+                                                            class="qty-input text-center w-25 border-0" value="1" />
+                                                        <a class="increment-btn">
+                                                            <i class="fa fa-plus text-dark  small_text"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <a class="mt-0 text-decoration-none text-dark d-flex py-1 ">
+
+                                                    <div
+                                                        class="d-flex align-items-center justify-content-center bg_yellow  w-100 ">
+                                                        <i class="fa-solid fa-cart-shopping"></i>
+                                                        <input
+                                                            class="submit text-center position-relative border-0 bg_yellow py-2 rounded"
+                                                            type="submit" value="Add to Cart">
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+        <!-- --------------essential_products----------------- -->
+        <section>
+            <div class="essential_products_sec  mb-3">
+                <div class="container_xxxl py-3 container_xxxl_height ">
+                    <div class="row py-3">
+                        <div class="col-12 title_body d-flex align-items-center flex-wrap">
+                            <div class="title_wrapper" data-aos="zoom-in" data-aos-easing="ease-out-cubic"
+                                data-aos-duration="2000">
+                                <h2 class="mb-0">Essential Products</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card -->
+                    <div class="row essential_products_sec_inner g-0">
+                        <div class="col-12   px-0 g-0">
+                            <div class="owl-carousel owl-theme" id="essential_products">
+                                <div class="item" data-aos="zoom-out" data-aos-easing="ease-out-cubic"
+                                    data-aos-duration="2000">
+                                    <div class="card  rounded-0 p-3 ">
+                                        <div class="card-img ">
+                                            <div class="rebbon  ">
+                                                <p
+                                                    class="position-absolute bg_yellow text-light p-1 rounded-1 small_text">
+                                                    -36%</p>
+                                            </div>
+                                            <a href="#">
+                                                <img src="img/product7.jpg" class="w-100" alt="">
+                                            </a>
+                                            <div class="product_icon">
+                                                <div class="position-absolute d-flex flex-column  ">
+                                                    <a data-bs-toggle="modal" href="#exampleModalToggle" role="button"
+                                                        class="text_yellow   product_icon1">
+                                                        <i class="fa-solid fa-maximize"></i>
+                                                    </a>
+                                                    <a href="#" class="text_yellow product_icon2">
+                                                        <i class="fa-regular fa-heart"></i>
+                                                    </a>
+                                                    <a href="#" class="text_yellow product_icon3">
+                                                        <i class="fa-solid fa-repeat"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body pb-0">
+                                            <div class="card-title">
+                                                <a href="#" class="text-dark text-decoration-none">
+                                                    <p class="mb-0">Robert Store</p>
+                                                </a>
+                                                <a href="#" class="text-decoration-none">
+                                                    <p>Red & Black Headphone</p>
+                                                </a>
+                                            </div>
+                                            <div class="card-text">
+                                                <div>
+                                                    <i class="fa-solid fa-star text_yellow small_text"></i>
+                                                    <i class="fa-solid fa-star text_yellow small_text"></i>
+                                                    <i class="fa-solid fa-star text_yellow small_text"></i>
+                                                    <i class="fa-solid fa-star text_yellow small_text"></i>
+                                                    <i class="fa-solid fa-star small_text"></i>
+                                                </div>
+                                                <div class="d-flex">
+                                                    <h6 class="text-danger">$350.05 <del
+                                                            class="small_text text-secondary">$506.00</del></h6>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="card_footer   px-1 pb-1 ">
+                                        <form class="wrapper text-align-center mx-auto">
+                                            <div class="cart-box d-inline-block p-1 w-100">
+                                                <div class="border d-flex justify-content-center rounded-1 py-1 mt-1 w-50 product_data"
+                                                    id="qty_select">
+                                                    <input type="hidden" value=" 1 " class="prod_id">
+                                                    <div class="input-group text-center justify-content-evenly align-items-center"
+                                                        id="qty_selector">
+                                                        <a class="decrement-btn text-dark">
+                                                            <i class="fa fa-minus ps-0 small_text"></i>
+                                                        </a>
+                                                        <input type="text" readonly="readonly" id="qty_display"
+                                                            class="qty-input text-center w-25 border-0" value="1" />
+                                                        <a class="increment-btn">
+                                                            <i class="fa fa-plus text-dark  small_text"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <a class="mt-0 text-decoration-none text-dark d-flex py-1 ">
+
+                                                    <div
+                                                        class="d-flex align-items-center justify-content-center bg_yellow  w-100 ">
+                                                        <i class="fa-solid fa-cart-shopping"></i>
+                                                        <input
+                                                            class="submit text-center position-relative border-0 bg_yellow py-2 rounded"
+                                                            type="submit" value="Add to Cart">
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="item" data-aos="zoom-out" data-aos-easing="ease-out-cubic"
+                                    data-aos-duration="2000">
+                                    <div class="card  rounded-0 p-3 ">
+                                        <div class="card-img ">
+                                            <div class="rebbon  ">
+                                                <p
+                                                    class="position-absolute bg_yellow text-light p-1 rounded-1 small_text">
+                                                    -36%</p>
+                                            </div>
+                                            <a href="#">
+                                                <img src="img/product3.jpg" class="w-100" alt="">
+                                            </a>
+                                            <div class="product_icon">
+                                                <div class="position-absolute d-flex flex-column  ">
+                                                    <a data-bs-toggle="modal" href="#exampleModalToggle" role="button"
+                                                        class="text_yellow   product_icon1">
+                                                        <i class="fa-solid fa-maximize"></i>
+                                                    </a>
+                                                    <a href="#" class="text_yellow product_icon2">
+                                                        <i class="fa-regular fa-heart"></i>
+                                                    </a>
+                                                    <a href="#" class="text_yellow product_icon3">
+                                                        <i class="fa-solid fa-repeat"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body pb-0">
+                                            <div class="card-title">
+                                                <a href="#" class="text-dark text-decoration-none">
+                                                    <p class="mb-0">Robert Store</p>
+                                                </a>
+                                                <a href="#" class="text-decoration-none">
+                                                    <p>Red & Black Headphone</p>
+                                                </a>
+                                            </div>
+                                            <div class="card-text">
+                                                <div>
+                                                    <i class="fa-solid fa-star text_yellow small_text"></i>
+                                                    <i class="fa-solid fa-star text_yellow small_text"></i>
+                                                    <i class="fa-solid fa-star text_yellow small_text"></i>
+                                                    <i class="fa-solid fa-star text_yellow small_text"></i>
+                                                    <i class="fa-solid fa-star small_text"></i>
+                                                </div>
+                                                <div class="d-flex">
+                                                    <h6 class="text-danger">$341.05 <del
+                                                            class="small_text text-secondary">$506.00</del></h6>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="card_footer   px-1 pb-1 ">
+                                        <form class="wrapper text-align-center mx-auto">
+                                            <div class="cart-box d-inline-block p-1 w-100">
+                                                <div class="border d-flex justify-content-center rounded-1 py-1 mt-1 w-50 product_data"
+                                                    id="qty_select">
+                                                    <input type="hidden" value=" 1 " class="prod_id">
+                                                    <div class="input-group text-center justify-content-evenly align-items-center"
+                                                        id="qty_selector">
+                                                        <a class="decrement-btn text-dark">
+                                                            <i class="fa fa-minus ps-0 small_text"></i>
+                                                        </a>
+                                                        <input type="text" readonly="readonly" id="qty_display"
+                                                            class="qty-input text-center w-25 border-0" value="1" />
+                                                        <a class="increment-btn">
+                                                            <i class="fa fa-plus text-dark  small_text"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <a class="mt-0 text-decoration-none text-dark d-flex py-1 ">
+
+                                                    <div
+                                                        class="d-flex align-items-center justify-content-center bg_yellow  w-100 ">
+                                                        <i class="fa-solid fa-cart-shopping"></i>
+                                                        <input
+                                                            class="submit text-center position-relative border-0 bg_yellow py-2 rounded"
+                                                            type="submit" value="Add to Cart">
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="item" data-aos="zoom-out" data-aos-easing="ease-out-cubic"
+                                    data-aos-duration="2000">
+                                    <div class="card  rounded-0 p-3 ">
+                                        <div class="card-img ">
+                                            <div class="rebbon  ">
+                                                <p
+                                                    class="position-absolute bg_yellow text-light p-1 rounded-1 small_text">
+                                                    -36%</p>
+                                            </div>
+                                            <a href="#">
+                                                <img src="img/product6.jpg" class="w-100" alt="">
+                                            </a>
+                                            <div class="product_icon">
+                                                <div class="position-absolute d-flex flex-column  ">
+                                                    <a data-bs-toggle="modal" href="#exampleModalToggle" role="button"
+                                                        class="text_yellow   product_icon1">
+                                                        <i class="fa-solid fa-maximize"></i>
+                                                    </a>
+                                                    <a href="#" class="text_yellow product_icon2">
+                                                        <i class="fa-regular fa-heart"></i>
+                                                    </a>
+                                                    <a href="#" class="text_yellow product_icon3">
+                                                        <i class="fa-solid fa-repeat"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body pb-0">
+                                            <div class="card-title">
+                                                <a href="#" class="text-dark text-decoration-none">
+                                                    <p class="mb-0">Robert Store</p>
+                                                </a>
+                                                <a href="#" class="text-decoration-none">
+                                                    <p>Red & Black Headphone</p>
+                                                </a>
+                                            </div>
+                                            <div class="card-text">
+                                                <div>
+                                                    <i class="fa-solid fa-star text_yellow small_text"></i>
+                                                    <i class="fa-solid fa-star text_yellow small_text"></i>
+                                                    <i class="fa-solid fa-star text_yellow small_text"></i>
+                                                    <i class="fa-solid fa-star text_yellow small_text"></i>
+                                                    <i class="fa-solid fa-star small_text"></i>
+                                                </div>
+                                                <div class="d-flex">
+                                                    <h6 class="text-danger">$341.05 <del
+                                                            class="small_text text-secondary">$506.00</del></h6>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="card_footer   px-1 pb-1 ">
+                                        <form class="wrapper text-align-center mx-auto">
+                                            <div class="cart-box d-inline-block p-1 w-100">
+                                                <div class="border d-flex justify-content-center rounded-1 py-1 mt-1 w-50 product_data"
+                                                    id="qty_select">
+                                                    <input type="hidden" value=" 1 " class="prod_id">
+                                                    <div class="input-group text-center justify-content-evenly align-items-center"
+                                                        id="qty_selector">
+                                                        <a class="decrement-btn text-dark">
+                                                            <i class="fa fa-minus ps-0 small_text"></i>
+                                                        </a>
+                                                        <input type="text" readonly="readonly" id="qty_display"
+                                                            class="qty-input text-center w-25 border-0" value="1" />
+                                                        <a class="increment-btn">
+                                                            <i class="fa fa-plus text-dark  small_text"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <a class="mt-0 text-decoration-none text-dark d-flex py-1 ">
+
+                                                    <div
+                                                        class="d-flex align-items-center justify-content-center bg_yellow  w-100 ">
+                                                        <i class="fa-solid fa-cart-shopping"></i>
+                                                        <input
+                                                            class="submit text-center position-relative border-0 bg_yellow py-2 rounded"
+                                                            type="submit" value="Add to Cart">
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+        <!-- ------------------cabbage_sec-------------------- -->
+        <section>
+            <div class="cabbage_sec   mb-3">
+                <div class="container_xxxl py-3 container_xxxl_height">
+                    <div class="row py-3">
+                        <div class="col-12 title_body d-flex align-items-center flex-wrap">
+                            <div class="title_wrapper" data-aos="zoom-in" data-aos-easing="ease-out-cubic"
+                                data-aos-duration="2000">
+                                <h2 class="mb-0">Cabbage, Spinach & Greens</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card -->
+                    <div class="row cabbage_sec_inner g-0">
+                        <div class="col-12   px-0 g-0">
+                            <div class="owl-carousel owl-theme" id="cabbage_sec">
+                                <div class="item" data-aos="flip-right" data-aos-easing="ease-out-cubic"
+                                    data-aos-duration="2000">
+                                    <div class="card  rounded-0 p-3 ">
+                                        <div class="card-img ">
+                                            <div class="rebbon  ">
+                                                <p
+                                                    class="position-absolute bg_yellow text-light p-1 rounded-1 small_text">
+                                                    -36%</p>
+                                            </div>
+                                            <a href="#">
+                                                <img src="img/31.jpg" class="w-100" alt="">
+                                            </a>
+                                            <div class="product_icon">
+                                                <div class="position-absolute d-flex flex-column  ">
+                                                    <a data-bs-toggle="modal" href="#exampleModalToggle" role="button"
+                                                        class="text_yellow   product_icon1">
+                                                        <i class="fa-solid fa-maximize"></i>
+                                                    </a>
+                                                    <a href="#" class="text_yellow product_icon2">
+                                                        <i class="fa-regular fa-heart"></i>
+                                                    </a>
+                                                    <a href="#" class="text_yellow product_icon3">
+                                                        <i class="fa-solid fa-repeat"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body pb-0">
+                                            <div class="card-title">
+                                                <a href="#" class="text-dark text-decoration-none">
+                                                    <p class="mb-0">Robert Store</p>
+                                                </a>
+                                                <a href="#" class="text-decoration-none">
+                                                    <p>Red & Black Headphone</p>
+                                                </a>
+                                            </div>
+                                            <div class="card-text">
+                                                <div>
+                                                    <i class="fa-solid fa-star text_yellow small_text"></i>
+                                                    <i class="fa-solid fa-star text_yellow small_text"></i>
+                                                    <i class="fa-solid fa-star text_yellow small_text"></i>
+                                                    <i class="fa-solid fa-star text_yellow small_text"></i>
+                                                    <i class="fa-solid fa-star small_text"></i>
+                                                </div>
+                                                <div class="d-flex">
+                                                    <h6 class="text-danger">$350.05 <del
+                                                            class="small_text text-secondary">$506.00</del></h6>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="card_footer   px-1 pb-1 ">
+                                        <form class="wrapper text-align-center mx-auto">
+                                            <div class="cart-box d-inline-block p-1 w-100">
+                                                <div class="border d-flex justify-content-center rounded-1 py-1 mt-1 w-50 product_data"
+                                                    id="qty_select">
+                                                    <input type="hidden" value=" 1 " class="prod_id">
+                                                    <div class="input-group text-center justify-content-evenly align-items-center"
+                                                        id="qty_selector">
+                                                        <a class="decrement-btn text-dark">
+                                                            <i class="fa fa-minus ps-0 small_text"></i>
+                                                        </a>
+                                                        <input type="text" readonly="readonly" id="qty_display"
+                                                            class="qty-input text-center w-25 border-0" value="1" />
+                                                        <a class="increment-btn">
+                                                            <i class="fa fa-plus text-dark  small_text"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <a class="mt-0 text-decoration-none text-dark d-flex py-1 ">
+
+                                                    <div
+                                                        class="d-flex align-items-center justify-content-center bg_yellow  w-100 ">
+                                                        <i class="fa-solid fa-cart-shopping"></i>
+                                                        <input
+                                                            class="submit text-center position-relative border-0 bg_yellow py-2 rounded"
+                                                            type="submit" value="Add to Cart">
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="item" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+                                    data-aos-duration="2000">
+                                    <div class="card  rounded-0 p-3 ">
+                                        <div class="card-img ">
+                                            <div class="rebbon  ">
+                                                <p
+                                                    class="position-absolute bg_yellow text-light p-1 rounded-1 small_text">
+                                                    -36%</p>
+                                            </div>
+                                            <a href="#">
+                                                <img src="img/32.jpg" class="w-100" alt="">
+                                            </a>
+                                            <div class="product_icon">
+                                                <div class="position-absolute d-flex flex-column  ">
+                                                    <a data-bs-toggle="modal" href="#exampleModalToggle" role="button"
+                                                        class="text_yellow   product_icon1">
+                                                        <i class="fa-solid fa-maximize"></i>
+                                                    </a>
+                                                    <a href="#" class="text_yellow product_icon2">
+                                                        <i class="fa-regular fa-heart"></i>
+                                                    </a>
+                                                    <a href="#" class="text_yellow product_icon3">
+                                                        <i class="fa-solid fa-repeat"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body pb-0">
+                                            <div class="card-title">
+                                                <a href="#" class="text-dark text-decoration-none">
+                                                    <p class="mb-0">Robert Store</p>
+                                                </a>
+                                                <a href="#" class="text-decoration-none">
+                                                    <p>Red & Black Headphone</p>
+                                                </a>
+                                            </div>
+                                            <div class="card-text">
+                                                <div>
+                                                    <i class="fa-solid fa-star text_yellow small_text"></i>
+                                                    <i class="fa-solid fa-star text_yellow small_text"></i>
+                                                    <i class="fa-solid fa-star text_yellow small_text"></i>
+                                                    <i class="fa-solid fa-star text_yellow small_text"></i>
+                                                    <i class="fa-solid fa-star small_text"></i>
+                                                </div>
+                                                <div class="d-flex">
+                                                    <h6 class="text-danger">$341.05 <del
+                                                            class="small_text text-secondary">$506.00</del></h6>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="card_footer   px-1 pb-1 ">
+                                        <form class="wrapper text-align-center mx-auto">
+                                            <div class="cart-box d-inline-block p-1 w-100">
+                                                <div class="border d-flex justify-content-center rounded-1 py-1 mt-1 w-50 product_data"
+                                                    id="qty_select">
+                                                    <input type="hidden" value=" 1 " class="prod_id">
+                                                    <div class="input-group text-center justify-content-evenly align-items-center"
+                                                        id="qty_selector">
+                                                        <a class="decrement-btn text-dark">
+                                                            <i class="fa fa-minus ps-0 small_text"></i>
+                                                        </a>
+                                                        <input type="text" readonly="readonly" id="qty_display"
+                                                            class="qty-input text-center w-25 border-0" value="1" />
+                                                        <a class="increment-btn">
+                                                            <i class="fa fa-plus text-dark  small_text"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <a class="mt-0 text-decoration-none text-dark d-flex py-1 ">
+
+                                                    <div
+                                                        class="d-flex align-items-center justify-content-center bg_yellow  w-100 ">
+                                                        <i class="fa-solid fa-cart-shopping"></i>
+                                                        <input
+                                                            class="submit text-center position-relative border-0 bg_yellow py-2 rounded"
+                                                            type="submit" value="Add to Cart">
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="item" data-aos="flip-right" data-aos-easing="ease-out-cubic"
+                                    data-aos-duration="2000">
+                                    <div class="card  rounded-0 p-3 ">
+                                        <div class="card-img ">
+                                            <div class="rebbon  ">
+                                                <p
+                                                    class="position-absolute bg_yellow text-light p-1 rounded-1 small_text">
+                                                    -36%</p>
+                                            </div>
+                                            <a href="#">
+                                                <img src="img/33.jpg" class="w-100" alt="">
+                                            </a>
+                                            <div class="product_icon">
+                                                <div class="position-absolute d-flex flex-column  ">
+                                                    <a data-bs-toggle="modal" href="#exampleModalToggle" role="button"
+                                                        class="text_yellow   product_icon1">
+                                                        <i class="fa-solid fa-maximize"></i>
+                                                    </a>
+                                                    <a href="#" class="text_yellow product_icon2">
+                                                        <i class="fa-regular fa-heart"></i>
+                                                    </a>
+                                                    <a href="#" class="text_yellow product_icon3">
+                                                        <i class="fa-solid fa-repeat"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body pb-0">
+                                            <div class="card-title">
+                                                <a href="#" class="text-dark text-decoration-none">
+                                                    <p class="mb-0">Robert Store</p>
+                                                </a>
+                                                <a href="#" class="text-decoration-none">
+                                                    <p>Red & Black Headphone</p>
+                                                </a>
+                                            </div>
+                                            <div class="card-text">
+                                                <div>
+                                                    <i class="fa-solid fa-star text_yellow small_text"></i>
+                                                    <i class="fa-solid fa-star text_yellow small_text"></i>
+                                                    <i class="fa-solid fa-star text_yellow small_text"></i>
+                                                    <i class="fa-solid fa-star text_yellow small_text"></i>
+                                                    <i class="fa-solid fa-star small_text"></i>
+                                                </div>
+                                                <div class="d-flex">
+                                                    <h6 class="text-danger">$341.05 <del
+                                                            class="small_text text-secondary">$506.00</del></h6>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="card_footer   px-1 pb-1 ">
+                                        <form class="wrapper text-align-center mx-auto">
+                                            <div class="cart-box d-inline-block p-1 w-100">
+                                                <div class="border d-flex justify-content-center rounded-1 py-1 mt-1 w-50 product_data"
+                                                    id="qty_select">
+                                                    <input type="hidden" value=" 1 " class="prod_id">
+                                                    <div class="input-group text-center justify-content-evenly align-items-center"
+                                                        id="qty_selector">
+                                                        <a class="decrement-btn text-dark">
+                                                            <i class="fa fa-minus ps-0 small_text"></i>
+                                                        </a>
+                                                        <input type="text" readonly="readonly" id="qty_display"
+                                                            class="qty-input text-center w-25 border-0" value="1" />
+                                                        <a class="increment-btn">
+                                                            <i class="fa fa-plus text-dark  small_text"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <a class="mt-0 text-decoration-none text-dark d-flex py-1 ">
+
+                                                    <div
+                                                        class="d-flex align-items-center justify-content-center bg_yellow  w-100 ">
+                                                        <i class="fa-solid fa-cart-shopping"></i>
+                                                        <input
+                                                            class="submit text-center position-relative border-0 bg_yellow py-2 rounded"
+                                                            type="submit" value="Add to Cart">
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="item" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+                                    data-aos-duration="2000">
+                                    <div class="card  rounded-0 p-3 ">
+                                        <div class="card-img ">
+                                            <div class="rebbon  ">
+                                                <p
+                                                    class="position-absolute bg_yellow text-light p-1 rounded-1 small_text">
+                                                    -36%</p>
+                                            </div>
+                                            <a href="#">
+                                                <img src="img/34.jpg" class="w-100" alt="">
+                                            </a>
+                                            <div class="product_icon">
+                                                <div class="position-absolute d-flex flex-column  ">
+                                                    <a data-bs-toggle="modal" href="#exampleModalToggle" role="button"
+                                                        class="text_yellow   product_icon1 ">
+                                                        <i class="fa-solid fa-maximize"></i>
+                                                    </a>
+                                                    <a href="#" class="text_yellow product_icon2">
+                                                        <i class="fa-regular fa-heart"></i>
+                                                    </a>
+                                                    <a href="#" class="text_yellow product_icon3">
+                                                        <i class="fa-solid fa-repeat"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body pb-0">
+                                            <div class="card-title">
+                                                <a href="#" class="text-dark text-decoration-none">
+                                                    <p class="mb-0">Robert Store</p>
+                                                </a>
+                                                <a href="#" class="text-decoration-none">
+                                                    <p>Red & Black Headphone</p>
+                                                </a>
+                                            </div>
+                                            <div class="card-text">
+                                                <div>
+                                                    <i class="fa-solid fa-star text_yellow small_text"></i>
+                                                    <i class="fa-solid fa-star text_yellow small_text"></i>
+                                                    <i class="fa-solid fa-star text_yellow small_text"></i>
+                                                    <i class="fa-solid fa-star text_yellow small_text"></i>
+                                                    <i class="fa-solid fa-star small_text"></i>
+                                                </div>
+                                                <div class="d-flex">
+                                                    <h6 class="text-danger">$341.05 <del
+                                                            class="small_text text-secondary">$506.00</del></h6>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="card_footer   px-1 pb-1 ">
+                                        <form class="wrapper text-align-center mx-auto">
+                                            <div class="cart-box d-inline-block p-1 w-100">
+                                                <div class="border d-flex justify-content-center rounded-1 py-1 mt-1 w-50 product_data"
+                                                    id="qty_select">
+                                                    <input type="hidden" value=" 1 " class="prod_id">
+                                                    <div class="input-group text-center justify-content-evenly align-items-center"
+                                                        id="qty_selector">
+                                                        <a class="decrement-btn text-dark">
+                                                            <i class="fa fa-minus ps-0 small_text"></i>
+                                                        </a>
+                                                        <input type="text" readonly="readonly" id="qty_display"
+                                                            class="qty-input text-center w-25 border-0" value="1" />
+                                                        <a class="increment-btn">
+                                                            <i class="fa fa-plus text-dark  small_text"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <a class="mt-0 text-decoration-none text-dark d-flex py-1 ">
+
+                                                    <div
+                                                        class="d-flex align-items-center justify-content-center bg_yellow  w-100 ">
+                                                        <i class="fa-solid fa-cart-shopping"></i>
+                                                        <input
+                                                            class="submit text-center position-relative border-0 bg_yellow py-2 rounded"
+                                                            type="submit" value="Add to Cart">
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ---------------Health Daily ----------------------- -->
+
+        <section class="bg_sky">
+            <div class="health_daily_sec mt-4  ">
+                <div class="container_xxxl">
+                    <div class="row py-4 ">
+
+                        <div class="col-lg-8 col-sm-12 col-12 health_daily_sec_start">
+
+                            <div>
+                                <div class="row py-3">
+                                    <div
+                                        class="col-12 title_body d-flex align-items-center flex-wrap justify-content-between">
+                                        <div class="title_wrapper" data-aos="zoom-in" data-aos-easing="ease-out-cubic"
+                                            data-aos-duration="2000">
+                                            <h2 class="mb-0">Health Daily</h2>
+                                        </div>
+                                        <div class="small_text">
+                                            <a href="#" class="text-decoration-none text-dark ">All Articles<i
+                                                    class="fa-solid fa-chevron-right ps-2"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=" health_sec_content p-xxl-4 p-xl-4 px-lg-4 p-3  " data-aos="zoom-in"
+                                    data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                                    <div class="row health_daily_sec_inner g-0 py-lg-4 py-md-4">
+                                        <div class="col-12    px-0 g-0">
+                                            <div class="owl-carousel owl-theme" id="health_daily_sec">
+                                                <div class="item">
+                                                    <div class="px-4 py-0 border-md-en">
+                                                        <div class="rounded-3 overflow-hidden border-end ">
+                                                            <img src="img/footer2.jpg" height="300" alt="">
+                                                        </div>
+                                                        <div class="mt-4">
+                                                            <p class="text-secondary small_text mb-0">By
+                                                                <b>System Admin</b> in <b><a href="#"
+                                                                        class="text-decoration-none">Fashion</a></b>
+                                                                on july 14, 2022
+                                                            </p>
+                                                            <a href="#" class="text-decoration-none ">
+                                                                <h4 class="mt-3">4 Expert Tips On How To Choose
+                                                                    The Right Men’s Wallet</h4>
+                                                            </a>
+                                                            <p class="small_text mt-3 mb-0">You should pay more
+                                                                attention when you choose your wallets. There
+                                                                are a lot of them on the market with...</p>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="item">
+                                                    <div class="px-4 py-0 border-md-en">
+                                                        <div class="rounded-3 overflow-hidden  ">
+                                                            <img src="img/footer2.jpg" height="300" alt="">
+                                                        </div>
+                                                        <div class="mt-4">
+                                                            <p class="text-secondary small_text mb-0">By
+                                                                <b>System Admin</b> in <b><a href="#"
+                                                                        class="text-decoration-none">Fashion</a></b>
+                                                                on july 14, 2022
+                                                            </p>
+                                                            <a href="#" class="text-decoration-none ">
+                                                                <h4 class="mt-3">4 Expert Tips On How To Choose
+                                                                    The Right Men’s Wallet</h4>
+                                                            </a>
+                                                            <p class="small_text mt-3 mb-0">You should pay more
+                                                                attention when you choose your wallets. There
+                                                                are a lot of them on the market with...</p>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-lg-4 col-sm-12 col-12  health_daily_sec_end  position-relative">
+                            <div class=" mobile_body position-lg-absolute pt-3 " data-aos="zoom-in"
+                                data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                                <div class=" text-center py-5 px-3">
+                                    <h2>Shop faster with Farmart App</h2>
+                                    <p class="py-3">Available on both iOS & Android</p>
+                                    <div class="app_btn d-flex justify-content-center align-items-center">
+                                        <a href="#" class="px-2"><img src="img/googleapp.png" alt="googleapp"></a>
+                                        <a href="#" class="px-2"><img src="img/apple_app.png" alt="apple_app"></a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- -------------------footer--------------------------------- -->
+        <section class="footer border-top">
+            <div class="container_xxxl ">
+                <div class="row  justify-content-between  g-2  border-bottom py-5">
+                    <div class=" col-xxl-2 col-xl-2 col-lg-4 col-md-6 col-12 py-2 ">
+                        <div class="d-flex align-items-center  ">
+                            <div class="px-3" data-aos="zoom-in" data-aos-easing="ease-out-cubic"
+                                data-aos-duration="2000">
+                                <img src="img/51.png" alt="">
+                            </div>
+                            <div class="">
+                                <h6 class="mb-0 text_light_black">Free Shipping</h6>
+                                <p class="small_text mb-0">For all orders over $200</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" col-xxl-2 col-xl-2 col-lg-4 col-md-6 col-12 py-2 ">
+                        <div class="d-flex align-items-center ">
+                            <div class="px-3" data-aos="zoom-in" data-aos-easing="ease-out-cubic"
+                                data-aos-duration="2000">
+                                <img src="img/52.png" alt="">
+                            </div>
+                            <div class="">
+                                <h6 class="mb-0 text_light_black">1 & 1 Returns</h6>
+                                <p class="small_text mb-0">Cancellation after 1 day</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" col-xxl-2 col-xl-2 col-lg-4 col-md-6 col-12 py-2 ">
+                        <div class="d-flex align-items-center ">
+                            <div class="px-3" data-aos="zoom-in" data-aos-easing="ease-out-cubic"
+                                data-aos-duration="2000">
+                                <img src="img/53.png" alt="">
+                            </div>
+                            <div class="">
+                                <h6 class="mb-0 text_light_black">100% Secure Payment</h6>
+                                <p class="small_text mb-0">Guarantee secure payments</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" col-xxl-2 col-xl-2 col-lg-4 col-md-6 col-12 py-2 ">
+                        <div class="d-flex align-items-center ">
+                            <div class="px-3" data-aos="zoom-in" data-aos-easing="ease-out-cubic"
+                                data-aos-duration="2000">
+                                <img src="img/54.png" alt="">
+                            </div>
+                            <div class="">
+                                <h6 class="mb-0 text_light_black">24/7 Dedicated Support</h6>
+                                <p class="small_text mb-0">Anywhere & anytime</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" col-xxl-2 col-xl-2 col-lg-4 col-md-6 col-12 py-2 ">
+                        <div class="d-flex align-items-center ">
+                            <div class="px-3" data-aos="zoom-in" data-aos-easing="ease-out-cubic"
+                                data-aos-duration="2000">
+                                <img src="img/55.png" alt="">
+                            </div>
+                            <div class="">
+                                <h6 class="mb-0 text_light_black">Daily Offers</h6>
+                                <p class="small_text mb-0">Discount up to 70% OFF</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- -----------------footer_middle-------------- -->
+                <div class="row footer_middle py-4">
+                    <div class="col-xxl-3 col-xl-2 col-12 ">
+                        <h5 class="py-2 fw-bold">Farmart – Your Online Foods & Grocery</h5>
+                        <ul class="list-unstyled text_light_black">
+                            <li class="fs-6 py-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                                finibus viverra iaculis. Etiam vulputate et justo eget scelerisque.</li>
+                            <li class="d-flex py-2">
+                                <span>
+                                    <i class="fa-solid fa-phone pe-2"></i>
+                                </span>
+                                <span class="d-flex flex-column">
+                                    Hotline 24/7:
+                                    <a href="tel:(+965) 7492-4277" class="text-decoration-none fs-4 fw-bold">(+965)
+                                        7492-4277</a>
+                                </span>
+                            </li>
+                            <li class="d-flex py-2">
+                                <span>
+                                    <i class="fa-solid fa-house pe-2"></i>
+                                </span>
+                                959 Homestead Street Eastlake
+                            </li>
+                            <li class="py-2">
+                                <span>
+                                    <i class="fa-solid fa-envelope pe-2"></i>
+                                </span>
+                                <span><a href="mailto:support@farmart.com"
+                                        class="text-decoration-none">support@farmart.com</a></span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-xxl-2 col-xl-2 col-12 ">
+                        <h5 class=" fw-bold">Terms Of Use</h5>
+                        <ul class="list-unstyled text_light_black ">
+                            <li class="py-2"><a href="#" class="text-decoration-none ">Terms & Conditions</a></li>
+                            <li class="py-2"><a href="#" class="text-decoration-none ">Refund Policy</a></li>
+                            <li class="py-2"><a href="#" class="text-decoration-none ">FAQs</a></li>
+                            <li class="py-2"><a href="#" class="text-decoration-none ">404 Page</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xxl-2 col-xl-2 col-12 ">
+                        <h5 class="fw-bold">Help Center</h5>
+                        <ul class="list-unstyled text_light_black ">
+                            <li class="py-2"><a href="#" class="text-decoration-none ">About us</a></li>
+                            <li class="py-2"><a href="#" class="text-decoration-none ">Affiliate</a></li>
+                            <li class="py-2"><a href="#" class="text-decoration-none ">Career</a></li>
+                            <li class="py-2"><a href="#" class="text-decoration-none ">Contact us</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xxl-2 col-xl-2 col-12 ">
+                        <h5 class="fw-bold">Business</h5>
+                        <ul class="list-unstyled text_light_black ">
+                            <li class="py-2"><a href="#" class="text-decoration-none ">Our blog</a></li>
+                            <li class="py-2"><a href="#" class="text-decoration-none ">Cart</a></li>
+                            <li class="py-2"><a href="#" class="text-decoration-none ">My account</a></li>
+                            <li class="py-2"><a href="#" class="text-decoration-none ">Shop</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xxl-2 col-xl-2 col-12 ">
+                        <h5 class="fw-bold">Newsletter</h5>
+                        <p>Register now to get updates on promotions and coupon. Don’t worry! We not spam</p>
+                        <div
+                            class=" d-inline-flex align-items-center justify-content-between email_box ps-2 rounded-3 w-100">
+                            <i class="fa-solid fa-envelope pe-1"></i>
+                            <input type="text" placeholder="Your Email " class="border-0 w-100">
+                            <button class="btn btn-warning rounded-0 shadow-none">Subcribe</button>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- ----------------------footer_product----------------------- -->
+                <div class="row border-top py-5  ">
+                    <div class="footer_product">
+                        <p class="d-flex flex-wrap">
+                            <strong class="fw-bold text_light_black pe-3">Consumer Electric: </strong>
+
+                            <a href="#" class="text-decoration-none px-1 border-end">Apples</a>
+                            <a href="#" class="text-decoration-none px-1 border-end">Bananas</a>
+                            <a href="#" class="text-decoration-none px-1 border-end">Berris</a>
+                            <a href="#" class="text-decoration-none px-1 border-end">Orange & Easy Peelers</a>
+                            <a href="#" class="text-decoration-none px-1 border-end">Fruits</a>
+                            <a href="#" class="text-decoration-none px-1 border-end">Graps</a>
+                            <a href="#" class="text-decoration-none px-1 ">Cabbage, Spinach &Greens</a>
+
+                        </p>
+
+                        <p class="d-flex flex-wrap">
+                            <span class="fw-bold text_light_black pe-3">Clothing & Apparel:</span>
+
+                            <a href="#" class="text-decoration-none px-1 border-end">Lemons & Limes</a>
+                            <a href="#" class="text-decoration-none px-1 border-end">Peaches & Nectarines</a>
+                            <a href="#" class="text-decoration-none px-1 border-end">Pears</a>
+                            <a href="#" class="text-decoration-none px-1 border-end">Melon</a>
+                            <a href="#" class="text-decoration-none px-1 ">Avocados</a>
+
+                        </p>
+                        <p class="d-flex flex-wrap">
+                            <span class="fw-bold text_light_black pe-3">Home, Garden & Kitchen:</span>
+                            <a href="#" class="text-decoration-none px-1 border-end">Plum & Appriciots</a>
+                            <a href="#" class="text-decoration-none px-1 border-end">Peacjes & Nectarines</a>
+                            <a href="#" class="text-decoration-none px-1 border-end">Pears</a>
+                            <a href="#" class="text-decoration-none px-1 border-end">Melon</a>
+                            <a href="#" class="text-decoration-none px-1 ">Avocados</a>
+
+                        </p>
+                        <p class="d-flex flex-wrap">
+                            <span class="fw-bold text_light_black pe-3">Health & Beauty:</span>
+                            <a href="#" class="text-decoration-none px-1 border-end">Mashrooms</a>
+                            <a href="#" class="text-decoration-none px-1 border-end">Tomatos</a>
+                            <a href="#" class="text-decoration-none px-1 border-end">Beans, Peas & Sweetcorn</a>
+                            <a href="#" class="text-decoration-none px-1 border-end">Freshly Drink Orange Juice</a>
+                            <a href="#" class="text-decoration-none px-1">Breads Sweets</a>
+
+                        </p>
+                        <p class="d-flex flex-wrap">
+                            <span class="fw-bold text_light_black pe-3">Computer & Techonologies:</span>
+                            <a href="#" class="text-decoration-none px-1 border-end">Onian, Leeks & Garlic</a>
+                            <a href="#" class="text-decoration-none px-1 border-end">Crips, Snacks & Nuts</a>
+                            <a href="#" class="text-decoration-none px-1 border-end"> Crisp & Poopcorn</a>
+                            <a href="#" class="text-decoration-none px-1 border-end">Nuts & Sheeds</a>
+                            <a href="#" class="text-decoration-none px-1 ">Lighter Option</a>
+
+                        </p>
+
+                    </div>
+                </div>
+                <!-- ---------------footer_logo_bottom -->
+                <div class="row  border-top py-3 d-flex">
+                    <div class="col-lg-4  col-md-12 col-12 text-center text-xxl-start text-xl-start  py-2 ">
+                        <p class="mb-0">© 2022 Farmart. All Rights Reserved.</p>
+                    </div>
+                    <div class="col-lg-4  col-md-12 col-12 py-2 ">
+                        <div class="w-100 footer_img d-flex justify-content-center">
+                            <img class="px-2" src="img/footer-payments.png" alt="">
+                        </div>
+                    </div>
+                    <div
+                        class="col-lg-4  col-md-12 col-12 footer_icon  d-flex justify-content-xxl-end  justify-content-xl-end  justify-content-center  py-2">
+
+                        <p class="mb-0 pe-1">Stay Conected: </p>
+                        <div class="">
+                            <a href="#" class="bg_yellow text_yellow rounded-1"><i
+                                    class="small_text fa-brands fa-facebook-f "></i></a>
+                            <a href="#" class="bg_yellow text_yellow rounded-1"><i
+                                    class="small_text fa-brands fa-twitter"></i></a>
+                            <a href="#" class="bg_yellow text_yellow rounded-1"><i
+                                    class="small_text fa-brands fa-instagram"></i></a>
+                            <a href="#" class="bg_yellow text_yellow rounded-1"><i
+                                    class="small_text fa-brands fa-youtube"></i></a>
+                            <a href="#" class="bg_yellow text_yellow rounded-1"><i
+                                    class="small_text fa-brands fa-pinterest"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- *--------------mobile_view_footer  ------------------- -->
+        <section class="mobile_view_footer">
+            <div class="d-flex justify-content-evenly">
+                <div class="home_body text-center">
+                    <a href="#" class="text_light_black text-decoration-none">
+                        <i class="fa-solid fa-house"></i>
+                        <p class="small_text"> Home</p>
+                    </a>
+                </div>
+                <div class="category_body text-center">
+                    <a href="#" class="text_light_black text-decoration-none">
+                        <i class="fa-solid fa-bars"></i>
+                        <p class="small_text"> Category</p>
+                    </a>
+                </div>
+                <div class="cart_body text-center">
+                    <a href="#" class="text_light_black text-decoration-none">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <p class="small_text"> Cart</p>
+                    </a>
+                </div>
+                <div class="wishlist_body text-center">
+                    <a href="#" class="text_light_black text-decoration-none">
+                        <i class="fa-regular fa-heart"></i>
+                        <p class="small_text"> Wishlist</p>
+                    </a>
+                </div>
+                <div class="account_body text-center">
+                    <a href="#" class="text_light_black text-decoration-none">
+                        <i class="fa-solid fa-user"></i>
+                        <p class="small_text"> Account</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!----------------------------- modal --------------------->
+        <!-- Scrollable modal -->
+        <div class="modal fade " id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+            tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered modal-xl mt-0">
+                <div class="modal-content">
+                    <div class="modal-header border-bottom-0">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body ">
+                        <div class="row">
+                            <!-- modal slider -->
+                            <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12  col-12 ">
+                                <div class="">
+                                    <div class="gallery">
+
+                                        <img src="/img/product2.jpg" alt="" class="transluz img-thumb"
+                                            onmouseover="currentDiv(1)" />
+                                        <img src="/img/product5.jpg" alt="" class="transluz img-thumb"
+                                            onmouseover="currentDiv(2)" />
+                                        <img src="/img/product6.jpg" alt="" class="transluz img-thumb"
+                                            onmouseover="currentDiv(3)" />
+                                        <img src="/img/product4.jpg" alt="" class="transluz img-thumb"
+                                            onmouseover="currentDiv(4)" />
+
+
+                                        <div class="mySlides">
+                                            <img src="/img/product2.jpg" alt="motel" />
+                                        </div>
+                                        <div class="mySlides" style="display: none;">
+                                            <img src="/img/product5.jpg" alt="lost" />
+                                        </div>
+                                        <div class="mySlides" style="display: none;">
+                                            <img src="/img/product6.jpg" alt="train" />
+                                        </div>
+                                        <div class="mySlides" style="display: none;">
+                                            <img src="/img/product4.jpg" alt="fields" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- modal-content -->
+                            <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12  col-12 px-2">
+                                <div class="modal_top_header  pb-3">
+                                    <h4> <a href="#" class="text_light_black">Smart Watches</a></h4>
+                                    <div class="d-flex justify-content-between align-items-centerpy-1">
+                                        <p class="small_text mb-0">Brand:
+                                            <a href="#" class="text-info"> Soda Brand</a>
+                                        </p>
+                                        <div class="d-flex align-items-baseline">
+                                            <a href="#" class="ps-1"><i
+                                                    class="fa-solid fa-star text_yellow small_text"></i></a>
+                                            <a href="#" class="ps-1"><i
+                                                    class="fa-solid fa-star text_yellow small_text"></i></a>
+                                            <a href="#" class="ps-1"><i
+                                                    class="fa-solid fa-star text_yellow small_text"></i></a>
+                                            <a href="#" class="ps-1"><i
+                                                    class="fa-solid fa-star text_yellow small_text"></i></a>
+                                            <a href="#" class="ps-1"><i class="fa-solid fa-star small_text"></i></a>
+                                            <p class="small_text mb-0 ps-1">(23 customers review)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="middle_part border-bottom border-top py-4">
+                                    <div class="modal_middle_content ">
+                                        <div class="d-flex align-items-center">
+                                            <p><a href="#" class="text-danger">
+                                                    <h2 class="text-danger">$340.68</h2>
+                                                </a><span class="ps-1"><del>$501.00</del></span></p>
+                                        </div>
+                                        <div class="small_text d-flex align-items-center py-2">
+                                            <p class="mb-0">Sold By:
+                                            <h5 class="mb-0 px-1"><a href="#" class=" text-info">ROBERT’S STORE</a></h5>
+                                            </p>
+                                        </div>
+                                        <div class="Availability py-2">
+                                            <div class="rounded-3 px-1">
+                                                <p class="mb-0 border-2 border-success p-2  small_text">Availability:
+                                                    <span class="text-success fw-bold px-1">19 products available</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <ul class="py-2 small_text text_light_black">
+                                            <li>Unrestrained and portable active stereo speaker</li>
+                                            <li>Free from the confines of wires and chords</li>
+                                            <li>20 hours of portable capabilities</li>
+                                            <li>Double-ended Coil Cord with 3.5mm Stereo Plugs Included</li>
+                                            <li>3/4″ Dome Tweeters: 2X and 4″ Woofer: 1X</li>
+                                        </ul>
+                                        <div class="color_main">
+                                            <p class="mb-0 pb-1">Color</p>
+
+                                            <div class="color_body d-flex ">
+
+                                                <div class="form-check px-0 pe-1">
+                                                    <div class="color1">
+                                                        <label class="form-check-label" for="flexRadioDefault1">
+                                                            <input class="form-check-input d-none" type="radio"
+                                                                name="flexRadioDefault" id="flexRadioDefault1">
+                                                            <span class="bg-success d-block   rounded-circle"></span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="form-check px-1">
+                                                    <div class="color2">
+                                                        <label class="form-check-label" for="flexRadioDefault2">
+                                                            <input class="form-check-input d-none" type="radio"
+                                                                name="flexRadioDefault" id="flexRadioDefault2">
+                                                            <span class="bg-info   rounded-circle"></span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="form-check px-1">
+                                                    <div class="color3">
+                                                        <label class="form-check-label" for="flexRadioDefault3">
+                                                            <input class="form-check-input d-none" type="radio"
+                                                                name="flexRadioDefault" id="flexRadioDefault3" checked>
+                                                            <span class="bg-primary  rounded-circle"></span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+                                        <div class="size_main py-2">
+                                            <p class="mb-0 pb-1">Size</p>
+
+                                            <div class="color_body d-flex custom_checkbox">
+
+                                                <div class="form-check px-0 pe-1">
+                                                    <div class="size1">
+                                                        <label class="form-check-label" for="sizeflexRadioDefault1">
+                                                            <input class="form-check-input d-none" type="radio"
+                                                                name="flexRadioDefault" id="sizeflexRadioDefault1">
+                                                            <span
+                                                                class=" border d-flex justify-content-center align-items-center px-1 small_text  ">S</span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="form-check px-1">
+                                                    <div class="size2">
+                                                        <label class="form-check-label" for="sizeflexRadioDefault2">
+                                                            <input class="form-check-input d-none" type="radio"
+                                                                name="flexRadioDefault" id="sizeflexRadioDefault2">
+                                                            <span
+                                                                class="border d-flex justify-content-center align-items-center px-1 small_text">XL</span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="form-check px-1">
+                                                    <div class="size3">
+                                                        <label class="form-check-label" for="sizeflexRadioDefault3">
+                                                            <input class="form-check-input d-none" type="radio"
+                                                                name="flexRadioDefault" id="sizeflexRadioDefault3"
+                                                                checked>
+                                                            <span
+                                                                class=" border d-flex justify-content-center align-items-center px-1 small_text ">XXL</span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <p class="small_text text-success py-1 mb-0">(19 products available)</p>
+                                        </div>
+                                        <div class="py-2">
+
+                                            <div class="wrapper text-align-center mx-auto">
+                                                <p class="mb-0">Quantity:</p>
+                                                <div class="row cart-box  p-1 d-flex  flex-wrap">
+
+                                                    <div class="col-sm-4 col-12 " id="qty_select">
+                                                        <div
+                                                            class="border d-flex justify-content-center rounded-1 py-1 my-1  product_data w-100">
+                                                            <input type="hidden" value=" 1 " class="prod_id">
+                                                            <div class="input-group text-center justify-content-evenly align-items-center"
+                                                                id="qty_selector">
+                                                                <a class="decrement-btn text-dark">
+                                                                    <i class="fa fa-minus ps-0 small_text"></i>
+                                                                </a>
+                                                                <input type="text" readonly="readonly" id="qty_display"
+                                                                    class="qty-input text-center w-25 border-0"
+                                                                    value="1" />
+                                                                <a class="increment-btn">
+                                                                    <i class="fa fa-plus text-dark  small_text"></i>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- -------add to cart---------0 -->
+                                                    <div class="col-sm-4 col-12 ">
+                                                        <a class="mt-0 text-decoration-none text-dark d-flex py-1 ">
+
+                                                            <div
+                                                                class="d-flex align-items-center justify-content-center bg_yellow  rounded-1 w-100">
+                                                                <i class="fa-solid fa-cart-shopping"></i>
+                                                                <input
+                                                                    class="submit text-center position-relative border-0 bg_yellow py-2 rounded"
+                                                                    type="submit" value="Add to Cart">
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <!-- -----buy btn----- -->
+                                                    <div class="  col-sm-4 col-12  ">
+                                                        <a class="mt-0 text-decoration-none text-dark d-flex py-1 ">
+
+                                                            <div
+                                                                class="d-flex align-items-center justify-content-center bg-dark  rounded-1 w-100">
+                                                                <input
+                                                                    class="submit text-center position-relative bg-dark text-light border-0   py-2 rounded"
+                                                                    type="submit" value="Buy Now">
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="py-2 d-flex">
+                                            <a href="#" class="pe-2"><i
+                                                    class="fa-regular fa-heart pe-2"></i>Wishlist</a>
+                                            <a href="#" class="px-2"><i class="fa-solid fa-repeat  px-2"></i>Compare</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="py-4">
+                                    <div>
+                                        <p class="text_light_black mb-0">SKU: <span class="text-dark px-2">
+                                                SW-160-A0</span></p>
+                                        <p class="mb-0 py-1">Categories:
+
+                                            <a href="#" class="text-primary small_text "> Lemons & Limes,</a>
+                                            <a href="#" class="text-primary small_text "> Freshly Drink Orange
+                                                Juice,</a>
+                                            <a href="#" class="text-primary small_text ">Nuts & Seeds,</a>
+                                            <a href="#" class="text-primary small_text "> Crisps,</a>
+                                            <a href="#" class="text-primary small_text ">Snacks & Nuts</a>
+
+                                        </p>
+                                        <p class="py-2 mb-0">Tags:
+
+                                            <a href="#" class="text-primary small_text ">Electronic,</a>
+                                            <a href="#" class="text-primary small_text ">Printer</a>
+
+                                        </p>
+                                    </div>
+                                    <div class="modal_icon py-2">
+                                        <div class="d-flex align-items-center flex-wrap ">
+                                            <a href="#"
+                                                class="modal_icon1 d-flex align-items-center  bg-primary py-1 me-1 p-2 rounded-1 text-light "><i
+                                                    class="pe-1 fs-6 fa-brands fa-facebook-f"></i>Facebook</a>
+                                            <a href="#"
+                                                class="modal_icon2 d-flex align-items-center  bg-info py-1 mx-1 p-2 rounded-1 text-light"><i
+                                                    class="pe-1 fs-6 fa-brands fa-twitter"></i>Twitter</a>
+                                            <a href="#"
+                                                class="modal_icon3 d-flex align-items-center  bg-danger py-1 mx-1 p-2 rounded-1 text-light"><i
+                                                    class="pe-1 fs-6 fa-brands fa-pinterest-p"></i>Pinterest</a>
+                                            <a href="#"
+                                                class=" modal_icon4 d-flex align-items-center  bg-info py-1 mx-1 p-2 rounded-1 text-light"><i
+                                                    class="pe-1 fs-6 fa-brands fa-linkedin-in"></i>Linkedin</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+
+
+
+    <!-- ---------BOOTSTAP SCRIPT------------- -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <!----------JQUERY------------>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+    <!-- -------------------------owlCarousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- -------------------------------animation script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- ---------------------modal swiper------- -->
+
+    <script>
+        let slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+
+        function currentDiv(n) {
+            showDivs(slideIndex = n);
+        }
+
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            var items = document.getElementsByClassName("img-thumb");
+
+            if (n > x.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = x.length }
+
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+
+            for (i = 0; i < items.length; i++) {
+                items[i].className = items[i].className.replace(" solid", "");
+            }
+            x[slideIndex - 1].style.display = "block";
+            items[slideIndex - 1].className += " solid";
+        }
+
+    </script>
+    <!-- ------------animation script-------------- -->
+    <script>
+        AOS.init();
+    </script>
+    <!-- ---------------hero_slider----------------- -->
+    <script>
+        $('#hero_slider').owlCarousel({
+            loop: true,
+            margin: 0,
+            nav: true,
+            dots: false,
+            animateOut: 'fadeOut',
+            autoplay: true,
+            responsive: {
+                0: {
+                    items: 1
+                }
+            }
+        })
+    </script>
+    <!------------- category_sec---------------->
+    <script>
+        $('#category_sec').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            responsive: {
+                0: {
+                    items: 2
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 5
+                },
+                1200: {
+                    items: 6
+                },
+                1400: {
+                    items: 8
+                }
+            }
+        })
+    </script>
+    <!------------- Featured_Brands_sec---------------->
+    <script>
+        $('#Featured_Brands_sec').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            responsive: {
+                0: {
+                    items: 2
+                },
+                1100: {
+                    items: 4
+                },
+
+            }
+        })
+    </script>
+    <!------------- Just_landing_sec---------------->
+    <script>
+        $('#Just_landing_sec').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            responsive: {
+                0: {
+                    items: 2
+                },
+                800: {
+                    items: 4
+                },
+                1200: {
+                    items: 6,
+                    loop: false,
+                    nav: false
+                },
+
+            }
+        })
+    </script>
+    <!-- -----------quantity_count_product--------------- -->
+    <script>
+        $(document).ready(function () {
+            $('.increment-btn').click(function (e) {
+                e.preventDefault();
+
+                var inc_value = $(this).closest('.product_data').find('.qty-input').val();
+                var value = parseInt(inc_value, 10);
+                value = isNaN(value) ? 0 : value;
+                if (value < 10) {
+                    value++;
+                    $(this).closest('.product_data').find('.qty-input').val(value);
+                }
+            });
+
+            $('.decrement-btn').click(function (e) {
+                e.preventDefault();
+
+                var dec_value = $(this).closest('.product_data').find('.qty-input').val();
+                var value = parseInt(dec_value, 10);
+                value = isNaN(value) ? 0 : value;
+                if (value > 1) {
+                    value--;
+                    $(this).closest('.product_data').find('.qty-input').val(value);
+                }
+            });
+        });
+    </script>
+    <!-------------top_saver---------------->
+    <script>
+        $('#top_saver').owlCarousel({
+            loop: true,
+            margin: 0,
+            nav: true,
+            autoplay: false,
+            responsive: {
+                0: {
+                    items: 2
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 6
+                }
+            }
+        })
+    </script>
+    <!-- -------------------left_side_panel -->
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+    <!-- -------------------search_side_panel -->
+    <script>
+        function openSearch() {
+            document.getElementById("searchPanelRight").style.width = "300px";
+        }
+
+        function closeSearch() {
+            document.getElementById("searchPanelRight").style.width = "0";
+        }
+    </script>
+
+    <!-- -------------cart_quantity -->
+    <script>
+
+        var counterValue = document.querySelector("#counter-value");
+        var counterIncrement = document.querySelector("#counter-increment");
+        var counterDecrement = document.querySelector("#counter-decrement");
+        var count = 0;
+
+        this.counterIncrement.addEventListener('click', () => {
+            this.count++
+            this.counterValue.setAttribute("value", count);
+        });
+
+        this.counterDecrement.addEventListener('click', () => {
+            this.count--
+            this.counterValue.setAttribute("value", count);
+        });
+
+    </script>
+    <!-- ---------dountdown_timer----------- -->
+    <script>
+        (function () {
+            const second = 1000,
+                minute = second * 60,
+                hour = minute * 60,
+                day = hour * 24;
+
+            //I'm adding this section so I don't have to keep updating this pen every year :-)
+            //remove this if you don't need it
+            let today = new Date(),
+                dd = String(today.getDate()).padStart(2, "0"),
+                mm = String(today.getMonth() + 1).padStart(2, "0"),
+                yyyy = today.getFullYear(),
+                nextYear = yyyy + 1,
+                dayMonth = "09/30/",
+                birthday = dayMonth + yyyy;
+
+            today = mm + "/" + dd + "/" + yyyy;
+            if (today > birthday) {
+                birthday = dayMonth + nextYear;
+            }
+            //end
+
+            const countDown = new Date(birthday).getTime(),
+                x = setInterval(function () {
+
+                    const now = new Date().getTime(),
+                        distance = countDown - now;
+
+                    document.getElementById("days").innerText = Math.floor(distance / (day)),
+                        document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
+                        document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
+                        document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
+
+                    //do something later when date is reached
+                    if (distance < 0) {
+                        document.getElementById("headline").innerText = "It's my birthday!";
+                        document.getElementById("countdown").style.display = "none";
+                        document.getElementById("content").style.display = "block";
+                        clearInterval(x);
+                    }
+                    //seconds
+                }, 0)
+        }());
+    </script>
+
+    <!-- ------------featured_products--------------- -->
+    <script>
+        $('#featured_products').owlCarousel({
+            loop: true,
+            margin: 0,
+            nav: true,
+            autoplay: false,
+            responsive: {
+                0: {
+                    items: 2
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 6
+                }
+            }
+        })
+    </script>
+
+    <!-- ------------essential_products--------------- -->
+    <script>
+        $('#essential_products').owlCarousel({
+            loop: true,
+            margin: 0,
+            nav: true,
+            autoplay: false,
+            responsive: {
+                0: {
+                    items: 2
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 6
+                }
+            }
+        })
+    </script>
+    <!-- --------------cabbage_sec---------------------- -->
+    <script>
+        $('#cabbage_sec').owlCarousel({
+            loop: true,
+            margin: 0,
+            nav: true,
+            autoplay: false,
+            responsive: {
+                0: {
+                    items: 2
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 6
+                }
+            }
+        })
+    </script>
+    <!-- -------------health_daily_sec--------------------- -->
+    <script>
+        $('#health_daily_sec').owlCarousel({
+            loop: true,
+            margin: 0,
+            nav: true,
+            autoplay: false,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 2
+                },
+                992: {
+                    items: 2,
+                    loop: false
+
+                }
+            }
+        })
+    </script>
+    <!-- -------------------------------back to top btn--- -->
+    <script>
+        window.onscroll = () => {
+            toggleTopButton();
+        }
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function toggleTopButton() {
+            if (document.body.scrollTop > 20 ||
+                document.documentElement.scrollTop > 20) {
+                document.getElementById('back-to-up').classList.remove('d-none');
+            } else {
+                document.getElementById('back-to-up').classList.add('d-none');
+            }
+        }
+    </script>
+
+
+</body>
+
+</html>
